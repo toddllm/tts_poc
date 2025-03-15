@@ -1,103 +1,108 @@
 #!/home/tdeshane/nexa_venv/bin/python3
 """
-Test Generation Script
+TTS Generation Test Script
 
-A simple script to test the TTS generation functionality.
+This script tests both the simple voice cloner and the CSM model adapter.
+It allows generating speech from text using either of the available models.
 """
 
 import os
 import sys
-import logging
 import argparse
+import logging
+from pathlib import Path
 
-# Configure logging
+# Set up logging
 logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger("test_generation")
 
-# Add the tts_poc directory to the Python path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# Add the project directory to the path so we can import our modules
+script_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(script_dir)
 
-# Import from our project
-from utils.voice_cloner import VoiceCloner
-
-def parse_arguments():
-    """Parse command line arguments."""
-    parser = argparse.ArgumentParser(description="Test TTS generation.")
-    parser.add_argument("--force-device", choices=["cpu", "cuda", "auto"], default="auto",
-                       help="Force a specific device for generation")
-    parser.add_argument("--text", type=str, 
-                       default="This is a test of our text to speech system. It should generate audio even if CUDA is not available or fails.",
-                       help="Text to convert to speech")
-    parser.add_argument("--verbose", action="store_true", 
-                       help="Enable more verbose output")
-    return parser.parse_args()
+# Import our modules
+try:
+    from utils.voice_cloner import VoiceCloner
+    from utils.csm_adapter import CSMModelAdapter
+except ImportError as e:
+    logger.error(f"Error importing modules: {e}")
+    print(f"Error importing modules: {e}")
+    sys.exit(1)
 
 def main():
-    """Main function to test TTS generation."""
-    # Parse arguments
-    args = parse_arguments()
+    """Main function for testing TTS generation."""
+    parser = argparse.ArgumentParser(description="Test TTS generation")
+    parser.add_argument("--text", default="Hello world.", 
+                        help="Text to convert to speech")
+    parser.add_argument("--model", choices=["simple", "csm"], default="simple",
+                        help="Model to use for TTS generation")
+    parser.add_argument("--device", choices=["cpu", "cuda", "auto"], default="auto",
+                        help="Device to use for TTS generation")
+    parser.add_argument("--voice", default=None,
+                        help="Path to voice sample file (optional)")
     
-    if args.verbose:
-        logger.setLevel(logging.DEBUG)
-        
-    logger.info("Starting TTS test generation")
-    logger.info(f"Using device: {args.force_device}")
+    args = parser.parse_args()
     
-    # Initialize the voice cloner
-    cloner = VoiceCloner()
+    # Use an even shorter text for CPU tests
+    if args.device == "cpu" and args.text == "Hello world.":
+        args.text = "Test."
+        logger.info(f"Using shorter text for CPU test: '{args.text}'")
     
-    # Check if we have the sample voice file
-    sample_voice_path = os.path.join(cloner.input_voice_dir, "speaker_7_temp_1.3_topk_80_accent_variation_120.wav")
-    if not os.path.exists(sample_voice_path):
-        logger.error(f"Sample voice file not found: {sample_voice_path}")
-        logger.info("Attempting to copy from movie_maker...")
-        
-        # Try to copy from movie_maker
-        source_path = "/home/tdeshane/movie_maker/voices/explore/speaker_7_temp_1.3_topk_80_accent_variation_120.wav"
-        if os.path.exists(source_path):
-            import shutil
-            os.makedirs(os.path.dirname(sample_voice_path), exist_ok=True)
-            shutil.copy2(source_path, sample_voice_path)
-            logger.info(f"Copied sample voice file to {sample_voice_path}")
-        else:
-            logger.error(f"Source voice file not found: {source_path}")
-            return 1
-    
-    # Generate speech
-    logger.info(f"Generating speech with text: {args.text}")
-    logger.info(f"Using device: {args.force_device}")
-    
-    # Generate with specified device
-    output_path = cloner.generate(
-        text=args.text,
-        voice_path=sample_voice_path,
-        device=args.force_device
-    )
-    
-    if output_path:
-        logger.info(f"Successfully generated speech at: {output_path}")
-        return 0
-    else:
-        logger.error(f"Failed to generate speech with {args.force_device}")
-        
-        # If not already tried with CPU, try it
-        if args.force_device != "cpu":
-            logger.info("Trying again with CPU explicitly...")
-            output_path = cloner.generate(
-                text=args.text,
-                voice_path=sample_voice_path,
-                device="cpu"
-            )
+    # Create output directory if it doesn't exist
+    output_dir = os.path.join(script_dir, "voices", "output")
+    os.makedirs(output_dir, exist_ok=True)
+
+    if args.model == "simple":
+        logger.info("Using simple voice cloner model")
+        try:
+            vc = VoiceCloner()
             
-            if output_path:
-                logger.info(f"Successfully generated speech with CPU at: {output_path}")
-                return 0
-        
-        logger.error("Failed to generate speech even with fallback")
-        return 1
+            # Check if a sample voice file was provided
+            voice_file = args.voice
+            if not voice_file:
+                # Use a default voice sample if available
+                sample_dir = os.path.join(script_dir, "voices", "input")
+                if os.path.exists(sample_dir):
+                    sample_files = [f for f in os.listdir(sample_dir) if f.endswith('.wav')]
+                    if sample_files:
+                        voice_file = os.path.join(sample_dir, sample_files[0])
+                        logger.info(f"Using sample voice file: {voice_file}")
+            
+            # Generate speech
+            output_file = vc.generate(args.text, voice_path=voice_file, device=args.device)
+            
+            if output_file and os.path.exists(output_file):
+                print(f"Successfully generated speech at: {output_file}")
+                print(f"Text: \"{args.text}\"")
+            else:
+                print("Failed to generate speech.")
+                
+        except Exception as e:
+            logger.exception(f"Error during TTS generation: {e}")
+            print(f"Error during TTS generation: {e}")
+            sys.exit(1)
+    
+    elif args.model == "csm":
+        logger.info("Using CSM model adapter")
+        try:
+            adapter = CSMModelAdapter()
+            
+            # Generate speech
+            output_file = adapter.generate_speech(args.text, voice_path=args.voice, device=args.device)
+            
+            if output_file and os.path.exists(output_file):
+                print(f"Successfully generated speech with CSM model at: {output_file}")
+                print(f"Text: \"{args.text}\"")
+            else:
+                print("Failed to generate speech with CSM model.")
+                
+        except Exception as e:
+            logger.exception(f"Error during CSM TTS generation: {e}")
+            print(f"Error during CSM TTS generation: {e}")
+            sys.exit(1)
 
 if __name__ == "__main__":
-    sys.exit(main()) 
+    main() 

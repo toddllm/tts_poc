@@ -9,12 +9,16 @@ import os
 import sys
 import json
 import logging
+import time
+from pathlib import Path
 from flask import Flask, request, jsonify, send_file, render_template_string, send_from_directory
 from flask_cors import CORS
+from concurrent.futures import ThreadPoolExecutor
+import threading
 
 # Configure logging
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger("tts_web_api")
@@ -22,15 +26,29 @@ logger = logging.getLogger("tts_web_api")
 # Add the current directory to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-# Import the voice cloner
+# Import the voice cloner and CSM adapter
 from utils.voice_cloner import VoiceCloner
+from utils.csm_adapter import CSMModelAdapter
 
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-# Initialize Voice Cloner
+# Initialize the TTS engines
 voice_cloner = VoiceCloner()
+try:
+    csm_adapter = CSMModelAdapter()
+    csm_available = True
+except Exception as e:
+    logger.warning(f"CSM Model Adapter not available: {e}")
+    csm_available = False
+
+# Set up executor for background tasks
+executor = ThreadPoolExecutor(max_workers=2)
+
+# Background task dictionary to track progress
+tasks = {}
+task_lock = threading.Lock()
 
 # Load voice data
 VOICE_DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "characters", "voices.json")
@@ -369,17 +387,18 @@ HTML_TEMPLATE = """
             const voice = voiceData.find(v => v.file_path === voiceId);
             if (!voice) return;
             
-            // Extract information to create a character
+            // Extract information from voice data
             const speakerId = voice.speaker_id;
             const gender = voice.gender;
             const style = voice.style || "standard";
             const temp = voice.temperature;
             const topk = voice.topk;
             
-            // Create character information
-            const characterName = `Speaker ${speakerId}`;
-            const characterTitle = `${gender.charAt(0).toUpperCase() + gender.slice(1)} Voice Artist`;
-            const characterDescription = `A professionally trained ${gender} voice actor with expertise in ${style} performances.`;
+            // Use character information from voice data
+            const characterName = voice.character_name || `Speaker ${speakerId}`;
+            const characterTitle = voice.character_role || `${gender.charAt(0).toUpperCase() + gender.slice(1)} Voice Artist`;
+            const characterDescription = voice.character_description || 
+                `A professionally trained ${gender} voice actor with expertise in ${style} performances.`;
             
             // Update the UI
             document.getElementById('character-name').textContent = characterName;
@@ -395,7 +414,7 @@ HTML_TEMPLATE = """
             sampleAudio.src = voiceId;
             sampleAudio.load();
             
-            logDebug(`Updated character information for Voice ID: ${voiceId}`);
+            logDebug(`Updated character information for: ${characterName}`);
         }
         
         // Function to check if a file exists by making a HEAD request
@@ -563,7 +582,7 @@ HTML_TEMPLATE = """
                     maleVoices.forEach(voice => {
                         const option = document.createElement('option');
                         option.value = voice.file_path;
-                        option.textContent = `Speaker ${voice.speaker_id} - ${voice.style} (temp=${voice.temperature}, topk=${voice.topk})`;
+                        option.textContent = `${voice.character_name || `Speaker ${voice.speaker_id}`} - ${voice.style} (${voice.temperature}, ${voice.topk})`;
                         maleGroup.appendChild(option);
                     });
                     
@@ -577,7 +596,7 @@ HTML_TEMPLATE = """
                     femaleVoices.forEach(voice => {
                         const option = document.createElement('option');
                         option.value = voice.file_path;
-                        option.textContent = `Speaker ${voice.speaker_id} - ${voice.style} (temp=${voice.temperature}, topk=${voice.topk})`;
+                        option.textContent = `${voice.character_name || `Speaker ${voice.speaker_id}`} - ${voice.style} (${voice.temperature}, ${voice.topk})`;
                         femaleGroup.appendChild(option);
                     });
                     
@@ -765,50 +784,114 @@ def health_check():
     """Simple health check endpoint."""
     return jsonify({'status': 'healthy'})
 
-@app.route('/api/tts', methods=['POST'])
-def generate_tts():
+@app.route('/api/generate', methods=['POST'])
+def generate_speech():
     """Generate speech from text."""
+    text = request.json.get('text', '')
+    voice_path = request.json.get('voice', '')
+    device = request.json.get('device', 'auto')
+    model = request.json.get('model', 'simple')
+    
+    if not text:
+        return jsonify({"error": "Text is required"}), 400
+    
+    # For very short texts in testing, default to CPU to avoid GPU overhead
+    if len(text) < 5 and device == "auto":
+        device = "cpu"
+        logger.info("Short text detected, using CPU for efficiency")
+    
     try:
-        # Parse request
-        data = request.json
-        text = data.get('text')
-        voice_path = data.get('voice_path')
-        device = data.get('device', 'auto')
+        # Create a unique task ID
+        task_id = str(int(time.time() * 1000))
         
-        if not text:
-            return jsonify({'error': 'No text provided'}), 400
-            
-        if not voice_path:
-            return jsonify({'error': 'No voice path provided'}), 400
+        with task_lock:
+            tasks[task_id] = {
+                "status": "pending",
+                "progress": 0,
+                "error": None,
+                "output": None,
+                "text_length": len(text)
+            }
         
-        # Get absolute path for the voice file
-        if voice_path.startswith('voices/'):
-            voice_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), voice_path)
+        # Submit the generation task to run in the background
+        executor.submit(
+            perform_generation, 
+            task_id=task_id,
+            text=text,
+            voice_path=voice_path,
+            device=device,
+            model=model
+        )
         
-        logger.info(f"Generating speech with text: '{text[:50]}...' using voice: {voice_path} on device: {device}")
-        
-        # Generate speech
-        import time
-        start_time = time.time()
-        
-        output_path = voice_cloner.generate(text=text, voice_path=voice_path, device=device)
-        
-        end_time = time.time()
-        generation_time_ms = int((end_time - start_time) * 1000)
-        
-        if not output_path:
-            return jsonify({'error': 'Failed to generate speech'}), 500
-        
-        # Return success response
-        return jsonify({
-            'success': True,
-            'output_file': output_path,
-            'generation_time_ms': generation_time_ms
-        })
+        return jsonify({"task_id": task_id})
     
     except Exception as e:
-        logger.exception("Error generating speech")
-        return jsonify({'error': str(e)}), 500
+        logger.exception(f"Error submitting generation task: {e}")
+        return jsonify({"error": str(e)}), 500
+
+def perform_generation(task_id, text, voice_path, device, model):
+    """Perform speech generation in a background thread."""
+    try:
+        with task_lock:
+            if task_id not in tasks:
+                return
+            
+            tasks[task_id]["status"] = "running"
+            tasks[task_id]["progress"] = 10
+        
+        # Short text optimization
+        is_short_text = len(text) < 10
+        
+        # Validate the voice path
+        if voice_path:
+            if voice_path.startswith('input/'):
+                voice_path = os.path.join(script_dir, 'voices', voice_path)
+            elif not os.path.isabs(voice_path):
+                voice_path = os.path.join(script_dir, 'voices', 'input', voice_path)
+        
+        with task_lock:
+            tasks[task_id]["progress"] = 20
+        
+        # Check if the selected model is available
+        if model == "csm" and not csm_available:
+            raise ValueError("CSM model is not available")
+        
+        # Choose the appropriate model
+        if model == "csm":
+            logger.info(f"Generating speech with CSM model: '{text}'")
+            output_path = csm_adapter.generate_speech(text, voice_path, device)
+        else:
+            logger.info(f"Generating speech with simple model: '{text}'")
+            output_path = voice_cloner.generate_speech(text, voice_path, device)
+        
+        with task_lock:
+            tasks[task_id]["progress"] = 90
+            
+        if output_path and os.path.exists(output_path):
+            # Get relative path for frontend
+            rel_path = os.path.relpath(output_path, os.path.join(script_dir, 'voices'))
+            rel_path = rel_path.replace('\\', '/')  # Handle Windows paths
+            
+            with task_lock:
+                tasks[task_id]["status"] = "complete"
+                tasks[task_id]["progress"] = 100
+                tasks[task_id]["output"] = rel_path
+                
+                # Add generation time information for diagnostics
+                tasks[task_id]["generation_time"] = time.time() - tasks[task_id].get("start_time", time.time())
+        else:
+            with task_lock:
+                tasks[task_id]["status"] = "error"
+                tasks[task_id]["progress"] = 100
+                tasks[task_id]["error"] = "Failed to generate speech"
+    
+    except Exception as e:
+        logger.exception(f"Error during speech generation: {e}")
+        with task_lock:
+            if task_id in tasks:
+                tasks[task_id]["status"] = "error"
+                tasks[task_id]["progress"] = 100
+                tasks[task_id]["error"] = str(e)
 
 @app.route('/audio/<filename>')
 def serve_audio(filename):
@@ -877,6 +960,76 @@ def diagnostic():
     except Exception as e:
         logger.exception("Error running diagnostic")
         return jsonify({'error': str(e), 'status': 'error'}), 500
+
+@app.route('/api/status/<task_id>')
+def get_task_status(task_id):
+    """Get the status of a generation task."""
+    with task_lock:
+        if task_id not in tasks:
+            return jsonify({"error": "Task not found"}), 404
+        
+        return jsonify(tasks[task_id])
+
+@app.route('/api/diagnostics')
+def get_diagnostics():
+    """Get system diagnostics information."""
+    try:
+        # Check CUDA availability
+        import torch
+        
+        cuda_available = torch.cuda.is_available()
+        cuda_details = {}
+        
+        if cuda_available:
+            device = torch.cuda.current_device()
+            cuda_details = {
+                "device_count": torch.cuda.device_count(),
+                "current_device": device,
+                "device_name": torch.cuda.get_device_name(device),
+                "total_memory_mb": torch.cuda.get_device_properties(device).total_memory / (1024 * 1024),
+                "allocated_memory_mb": torch.cuda.memory_allocated(device) / (1024 * 1024),
+                "free_memory_mb": (torch.cuda.get_device_properties(device).total_memory - torch.cuda.memory_allocated(device)) / (1024 * 1024)
+            }
+        
+        # Get voice sample info
+        input_dir = os.path.join(script_dir, "voices", "input")
+        output_dir = os.path.join(script_dir, "voices", "output")
+        
+        input_count = 0
+        output_count = 0
+        
+        if os.path.exists(input_dir):
+            input_count = len([f for f in os.listdir(input_dir) if f.endswith('.wav')])
+        
+        if os.path.exists(output_dir):
+            output_count = len([f for f in os.listdir(output_dir) if f.endswith('.wav')])
+        
+        # Get model info
+        csm_info = {
+            "available": csm_available,
+            "script_path": os.path.join(script_dir, "utils", "csm_adapter.py"),
+            "movie_maker_path_exists": os.path.exists("/home/tdeshane/movie_maker")
+        }
+        
+        return jsonify({
+            "cuda": {
+                "available": cuda_available,
+                "details": cuda_details
+            },
+            "voices": {
+                "input_count": input_count,
+                "output_count": output_count
+            },
+            "models": {
+                "simple": {
+                    "available": True
+                },
+                "csm": csm_info
+            }
+        })
+    except Exception as e:
+        logger.exception(f"Error getting diagnostics: {e}")
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     # Ensure the output directory exists

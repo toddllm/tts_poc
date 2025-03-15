@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character-Based TTS Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main-content {
+            display: flex;
+            gap: 20px;
+        }
+        .panel {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        button:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .voice-list {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        .voice-item {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .voice-item:hover {
+            background-color: #f0f0f0;
+        }
+        .voice-item.selected {
+            background-color: #e1f5fe;
+            border-left: 3px solid #2196f3;
+        }
+        .voice-item:last-child {
+            border-bottom: none;
+        }
+        .character-info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f7ff;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+        }
+        .character-title {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        .progress-container {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            background-color: #2ecc71;
+            border-radius: 10px;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        .status-message {
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        .error-message {
+            color: #e74c3c;
+        }
+        .success-message {
+            color: #27ae60;
+        }
+        .audio-player {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .voice-filter {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .voice-filter button {
+            flex: 1;
+            padding: 8px;
+            font-size: 14px;
+        }
+        .diagnostics-panel {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff8e1;
+            border-radius: 8px;
+            border-left: 5px solid #ffc107;
+        }
+        .collapsible {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: none;
+            text-align: left;
+            outline: none;
+            width: 100%;
+            font-weight: 600;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        .collapsible:after {
+            content: '\\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+        }
+        .active:after {
+            content: "\\2212";
+        }
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f9f9f9;
+            border-radius: 0 0 4px 4px;
+        }
+        pre {
+            margin: 0;
+            padding: 10px;
+            overflow-x: auto;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Character-Based TTS Demo</h1>
+        
+        <div class="main-content">
+            <div class="panel">
+                <h2>Voice Selection</h2>
+                <div class="voice-filter">
+                    <button onclick="filterVoices('all')" class="filter-active">All</button>
+                    <button onclick="filterVoices('male')">Male</button>
+                    <button onclick="filterVoices('female')">Female</button>
+                </div>
+                <div class="voice-list" id="voiceList">
+                    <div class="voice-item">Loading voices...</div>
+                </div>
+                
+                <div class="character-info" id="characterInfo">
+                    <h3 id="characterName">No Character Selected</h3>
+                    <div id="characterTitle" class="character-title">Please select a voice from the list above</div>
+                    <p id="characterDescription">Character description will appear here.</p>
+                    <div id="voiceParams"></div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <h2>Text to Speech</h2>
+                
+                <div class="input-group">
+                    <label for="modelSelect">TTS Model:</label>
+                    <select id="modelSelect">
+                        <option value="simple">Simple Voice Cloner</option>
+                        <option value="csm" {% if not csm_available %}disabled{% endif %}>CSM Model {% if not csm_available %}(Not Available){% endif %}</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="deviceSelect">Device:</label>
+                    <select id="deviceSelect">
+                        <option value="auto">Auto (Prefer GPU)</option>
+                        <option value="cuda">CUDA (GPU only)</option>
+                        <option value="cpu">CPU only</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="textInput">Text to Generate:</label>
+                    <textarea id="textInput" placeholder="Enter text to convert to speech...">Hello world.</textarea>
+                </div>
+                
+                <button id="generateBtn" onclick="generateSpeech()">Generate Speech</button>
+                
+                <div class="result" id="result">
+                    <div class="progress-container" style="display: none;" id="progressContainer">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                    <div class="status-message" id="statusMessage"></div>
+                    <audio controls class="audio-player" id="audioPlayer" style="display: none;"></audio>
+                </div>
+            </div>
+        </div>
+        
+        <div class="panel">
+            <button type="button" class="collapsible" onclick="toggleDiagnostics()">System Diagnostics</button>
+            <div class="collapsible-content" id="diagnosticsContent">
+                <div class="diagnostics-panel" id="diagnosticsPanel">
+                    <pre id="diagnosticsOutput">Loading diagnostics...</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let selectedVoice = null;
+        let voices = [];
+        let currentTaskId = null;
+        let statusCheckInterval = null;
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadVoiceData();
+            loadDiagnostics();
+        });
+        
+        // Load voice data from API
+        function loadVoiceData() {
+            fetch('/api/voices')
+                .then(response => response.json())
+                .then(data => {
+                    voices = data;
+                    displayVoices(voices);
+                })
+                .catch(error => {
+                    console.error('Error loading voices:', error);
+                    document.getElementById('voiceList').innerHTML = `
+                        <div class="voice-item error-message">
+                            Error loading voices. Please check console for details.
+                        </div>
+                    `;
+                });
+        }
+        
+        // Display voices in the list
+        function displayVoices(voiceList) {
+            const voiceListElement = document.getElementById('voiceList');
+            
+            if (voiceList.length === 0) {
+                voiceListElement.innerHTML = `
+                    <div class="voice-item">
+                        No voices found. Please add voice samples to the input directory.
+                    </div>
+                `;
+                return;
+            }
+            
+            // Sort by speaker ID and then by style
+            voiceList.sort((a, b) => {
+                if (a.speaker_id !== b.speaker_id) {
+                    return a.speaker_id - b.speaker_id;
+                }
+                return a.style.localeCompare(b.style);
+            });
+            
+            voiceListElement.innerHTML = voiceList.map(voice => `
+                <div class="voice-item" data-voice-id="${voice.filename}" data-gender="${voice.gender}">
+                    ${voice.character_name || `Speaker ${voice.speaker_id}`} - ${voice.style} (${voice.temperature}, ${voice.topk})
+                </div>
+            `).join('');
+            
+            // Add click event to select voice
+            document.querySelectorAll('.voice-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    document.querySelectorAll('.voice-item').forEach(el => el.classList.remove('selected'));
+                    this.classList.add('selected');
+                    
+                    const voiceId = this.getAttribute('data-voice-id');
+                    selectedVoice = voices.find(v => v.filename === voiceId);
+                    
+                    updateCharacterInfo(selectedVoice);
+                });
+            });
+        }
+        
+        // Filter voices by gender
+        function filterVoices(filter) {
+            const buttons = document.querySelectorAll('.voice-filter button');
+            buttons.forEach(btn => btn.classList.remove('filter-active'));
+            
+            const activeBtn = Array.from(buttons).find(btn => btn.innerText.toLowerCase() === filter);
+            if (activeBtn) activeBtn.classList.add('filter-active');
+            
+            const items = document.querySelectorAll('.voice-item');
+            
+            if (filter === 'all') {
+                items.forEach(item => item.style.display = '');
+            } else {
+                items.forEach(item => {
+                    const gender = item.getAttribute('data-gender');
+                    item.style.display = gender === filter ? '' : 'none';
+                });
+            }
+        }
+        
+        // Update character information when a voice is selected
+        function updateCharacterInfo(voice) {
+            if (!voice) return;
+            
+            const characterName = document.getElementById('characterName');
+            const characterTitle = document.getElementById('characterTitle');
+            const characterDescription = document.getElementById('characterDescription');
+            const voiceParams = document.getElementById('voiceParams');
+            
+            // Extract character info directly from voice data
+            const name = voice.character_name || `Speaker ${voice.speaker_id}`;
+            const title = voice.character_role || `${voice.gender.charAt(0).toUpperCase() + voice.gender.slice(1)} Voice`;
+            const description = voice.character_description || `A ${voice.gender} voice with speaker ID ${voice.speaker_id} using ${voice.style} style.`;
+            
+            characterName.textContent = name;
+            characterTitle.textContent = title;
+            characterDescription.textContent = description;
+            
+            // Display voice parameters
+            voiceParams.innerHTML = `
+                <p><strong>Voice Parameters:</strong></p>
+                <ul>
+                    <li>Speaker ID: ${voice.speaker_id}</li>
+                    <li>Gender: ${voice.gender.charAt(0).toUpperCase() + voice.gender.slice(1)}</li>
+                    <li>Style: ${voice.style}</li>
+                    <li>Temperature: ${voice.temperature}</li>
+                    <li>Top-K: ${voice.topk}</li>
+                </ul>
+            `;
+            
+            console.log(`Selected voice: ${name}`, voice);
+        }
+        
+        // Generate speech from text
+        function generateSpeech() {
+            const text = document.getElementById('textInput').value.trim();
+            const device = document.getElementById('deviceSelect').value;
+            const model = document.getElementById('modelSelect').value;
+            
+            if (!text) {
+                setStatusMessage('Please enter text to generate speech.', 'error');
+                return;
+            }
+            
+            if (!selectedVoice) {
+                setStatusMessage('Please select a voice first.', 'error');
+                return;
+            }
+            
+            setStatusMessage('Preparing to generate speech...', 'info');
+            showProgress(true, 0);
+            disableGenerateButton(true);
+            
+            fetch('/api/generate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    text,
+                    voice: selectedVoice.filepath,
+                    device,
+                    model
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                
+                currentTaskId = data.task_id;
+                checkTaskStatus();
+                statusCheckInterval = setInterval(checkTaskStatus, 1000);
+            })
+            .catch(error => {
+                console.error('Error generating speech:', error);
+                setStatusMessage(`Error: ${error.message}`, 'error');
+                showProgress(false);
+                disableGenerateButton(false);
+            });
+        }
+        
+        // Check task status
+        function checkTaskStatus() {
+            if (!currentTaskId) return;
+            
+            fetch(`/api/status/${currentTaskId}`)
+                .then(response => response.json())
+                .then(data => {
+                    updateProgress(data.progress);
+                    
+                    if (data.status === 'complete') {
+                        clearInterval(statusCheckInterval);
+                        setStatusMessage('Speech generation complete!', 'success');
+                        disableGenerateButton(false);
+                        
+                        if (data.output) {
+                            playGeneratedAudio(data.output);
+                        }
+                    } else if (data.status === 'error') {
+                        clearInterval(statusCheckInterval);
+                        setStatusMessage(`Error: ${data.error}`, 'error');
+                        disableGenerateButton(false);
+                        showProgress(false);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error checking task status:', error);
+                    clearInterval(statusCheckInterval);
+                    setStatusMessage('Error checking task status.', 'error');
+                    disableGenerateButton(false);
+                    showProgress(false);
+                });
+        }
+        
+        // Update progress bar
+        function updateProgress(progress) {
+            document.getElementById('progressBar').style.width = `${progress}%`;
+        }
+        
+        // Show/hide progress bar
+        function showProgress(show, initialProgress = 0) {
+            const progressContainer = document.getElementById('progressContainer');
+            progressContainer.style.display = show ? 'block' : 'none';
+            
+            if (show) {
+                updateProgress(initialProgress);
+            }
+        }
+        
+        // Set status message
+        function setStatusMessage(message, type = 'info') {
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.textContent = message;
+            statusMessage.className = 'status-message';
+            
+            if (type === 'error') {
+                statusMessage.classList.add('error-message');
+            } else if (type === 'success') {
+                statusMessage.classList.add('success-message');
+            }
+        }
+        
+        // Disable generate button during processing
+        function disableGenerateButton(disable) {
+            const generateBtn = document.getElementById('generateBtn');
+            generateBtn.disabled = disable;
+            generateBtn.textContent = disable ? 'Processing...' : 'Generate Speech';
+        }
+        
+        // Play generated audio
+        function playGeneratedAudio(audioPath) {
+            const audioPlayer = document.getElementById('audioPlayer');
+            audioPlayer.src = `/${audioPath}`;
+            audioPlayer.style.display = 'block';
+            audioPlayer.play().catch(error => {
+                console.error('Error playing audio:', error);
+            });
+        }
+        
+        // Load system diagnostics
+        function loadDiagnostics() {
+            fetch('/api/diagnostics')
+                .then(response => response.json())
+                .then(data => {
+                    const output = document.getElementById('diagnosticsOutput');
+                    output.textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error loading diagnostics:', error);
+                    const output = document.getElementById('diagnosticsOutput');
+                    output.textContent = `Error loading diagnostics: ${error.message}`;
+                });
+        }
+        
+        // Toggle diagnostics panel
+        function toggleDiagnostics() {
+            const content = document.getElementById('diagnosticsContent');
+            const button = document.querySelector('.collapsible');
+            
+            button.classList.toggle('active');
+            
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                loadDiagnostics(); // Reload diagnostics when panel is opened
+            }
+        }
+    </script>
+</body>
+</html> 

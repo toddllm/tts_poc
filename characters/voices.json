@@ -7,7 +7,10 @@
     "speaker_id": "0",
     "temperature": "0.5",
     "topk": "50",
-    "style": "technical 7"
+    "style": "technical 7",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_0.5_topk_80_short_10",
@@ -17,7 +20,10 @@
     "speaker_id": "0",
     "temperature": "0.5",
     "topk": "80",
-    "style": "short 10"
+    "style": "short 10",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_0.75_topk_20_game_instructions_18",
@@ -27,7 +33,10 @@
     "speaker_id": "0",
     "temperature": "0.75",
     "topk": "20",
-    "style": "game instructions 18"
+    "style": "game instructions 18",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_0.75_topk_50_game_instructions_23",
@@ -37,7 +46,10 @@
     "speaker_id": "0",
     "temperature": "0.75",
     "topk": "50",
-    "style": "game instructions 23"
+    "style": "game instructions 23",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_0.9_topk_20_accent_variation_34",
@@ -47,7 +59,10 @@
     "speaker_id": "0",
     "temperature": "0.9",
     "topk": "20",
-    "style": "accent variation 34"
+    "style": "accent variation 34",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_0.9_topk_50_conversation_11",
@@ -57,7 +72,10 @@
     "speaker_id": "0",
     "temperature": "0.9",
     "topk": "50",
-    "style": "conversation 11"
+    "style": "conversation 11",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_0.9_topk_50_medium_8",
@@ -67,7 +85,10 @@
     "speaker_id": "0",
     "temperature": "0.9",
     "topk": "50",
-    "style": "medium 8"
+    "style": "medium 8",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_1.1_topk_20_emotional_51",
@@ -77,7 +98,10 @@
     "speaker_id": "0",
     "temperature": "1.1",
     "topk": "20",
-    "style": "emotional 51"
+    "style": "emotional 51",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_1.1_topk_50_medium_28",
@@ -87,7 +111,10 @@
     "speaker_id": "0",
     "temperature": "1.1",
     "topk": "50",
-    "style": "medium 28"
+    "style": "medium 28",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_1.1_topk_50_short_55",
@@ -97,7 +124,10 @@
     "speaker_id": "0",
     "temperature": "1.1",
     "topk": "50",
-    "style": "short 55"
+    "style": "short 55",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_1.1_topk_80_accent_variation_68",
@@ -107,7 +137,10 @@
     "speaker_id": "0",
     "temperature": "1.1",
     "topk": "80",
-    "style": "accent variation 68"
+    "style": "accent variation 68",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_1.1_topk_80_conversation_66",
@@ -117,7 +150,10 @@
     "speaker_id": "0",
     "temperature": "1.1",
     "topk": "80",
-    "style": "conversation 66"
+    "style": "conversation 66",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_1.1_topk_80_game_instructions_39",
@@ -127,7 +163,10 @@
     "speaker_id": "0",
     "temperature": "1.1",
     "topk": "80",
-    "style": "game instructions 39"
+    "style": "game instructions 39",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_0_temp_1.3_topk_80_medium_55",
@@ -137,7 +176,10 @@
     "speaker_id": "0",
     "temperature": "1.3",
     "topk": "80",
-    "style": "medium 55"
+    "style": "medium 55",
+    "character_name": "James Cooper",
+    "character_role": "Game Narrator",
+    "character_description": "A veteran voice actor known for his dynamic range and captivating storytelling ability."
   },
   {
     "filename": "speaker_1_temp_0.5_topk_80_short_98",
@@ -147,7 +189,10 @@
     "speaker_id": "1",
     "temperature": "0.5",
     "topk": "80",
-    "style": "short 98"
+    "style": "short 98",
+    "character_name": "Alex Morgan",
+    "character_role": "Sci-Fi Storyteller",
+    "character_description": "A versatile narrator who specializes in futuristic and science fiction content."
   },
   {
     "filename": "speaker_1_temp_0.9_topk_20_accent_variation_122",
@@ -157,7 +202,10 @@
     "speaker_id": "1",
     "temperature": "0.9",
     "topk": "20",
-    "style": "accent variation 122"
+    "style": "accent variation 122",
+    "character_name": "Alex Morgan",
+    "character_role": "Sci-Fi Storyteller",
+    "character_description": "A versatile narrator who specializes in futuristic and science fiction content."
   },
   {
     "filename": "speaker_1_temp_1.1_topk_50_game_instructions_92",
@@ -167,7 +215,10 @@
     "speaker_id": "1",
     "temperature": "1.1",
     "topk": "50",
-    "style": "game instructions 92"
+    "style": "game instructions 92",
+    "character_name": "Alex Morgan",
+    "character_role": "Sci-Fi Storyteller",
+    "character_description": "A versatile narrator who specializes in futuristic and science fiction content."
   },
   {
     "filename": "speaker_1_temp_1.1_topk_80_medium_151",
@@ -177,7 +228,10 @@
     "speaker_id": "1",
     "temperature": "1.1",
     "topk": "80",
-    "style": "medium 151"
+    "style": "medium 151",
+    "character_name": "Alex Morgan",
+    "character_role": "Sci-Fi Storyteller",
+    "character_description": "A versatile narrator who specializes in futuristic and science fiction content."
   },
   {
     "filename": "speaker_1_temp_1.3_topk_50_conversation_167",
@@ -187,7 +241,10 @@
     "speaker_id": "1",
     "temperature": "1.3",
     "topk": "50",
-    "style": "conversation 167"
+    "style": "conversation 167",
+    "character_name": "Alex Morgan",
+    "character_role": "Sci-Fi Storyteller",
+    "character_description": "A versatile narrator who specializes in futuristic and science fiction content."
   },
   {
     "filename": "speaker_1_temp_1.3_topk_80_game_instructions_119",
@@ -197,7 +254,10 @@
     "speaker_id": "1",
     "temperature": "1.3",
     "topk": "80",
-    "style": "game instructions 119"
+    "style": "game instructions 119",
+    "character_name": "Alex Morgan",
+    "character_role": "Sci-Fi Storyteller",
+    "character_description": "A versatile narrator who specializes in futuristic and science fiction content."
   },
   {
     "filename": "speaker_1_temp_1.3_topk_80_short_170",
@@ -207,7 +267,10 @@
     "speaker_id": "1",
     "temperature": "1.3",
     "topk": "80",
-    "style": "short 170"
+    "style": "short 170",
+    "character_name": "Alex Morgan",
+    "character_role": "Sci-Fi Storyteller",
+    "character_description": "A versatile narrator who specializes in futuristic and science fiction content."
   },
   {
     "filename": "speaker_2_temp_0.9_topk_50_conversation_with_context_122",
@@ -217,7 +280,10 @@
     "speaker_id": "2",
     "temperature": "0.9",
     "topk": "50",
-    "style": "conversation with context 122"
+    "style": "conversation with context 122",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_0.9_topk_50_conversation_with_context_709",
@@ -227,7 +293,10 @@
     "speaker_id": "2",
     "temperature": "0.9",
     "topk": "50",
-    "style": "conversation with context 709"
+    "style": "conversation with context 709",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_0.9_topk_80_accent_variation_224",
@@ -237,7 +306,10 @@
     "speaker_id": "2",
     "temperature": "0.9",
     "topk": "80",
-    "style": "accent variation 224"
+    "style": "accent variation 224",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_20_accent_variation_230",
@@ -247,7 +319,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "20",
-    "style": "accent variation 230"
+    "style": "accent variation 230",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_20_conversation_4",
@@ -257,7 +332,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "20",
-    "style": "conversation 4"
+    "style": "conversation 4",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_20_emotional_227",
@@ -267,7 +345,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "20",
-    "style": "emotional 227"
+    "style": "emotional 227",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_20_emotional_3",
@@ -277,7 +358,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "20",
-    "style": "emotional 3"
+    "style": "emotional 3",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_20_game_instructions_5",
@@ -287,7 +371,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "20",
-    "style": "game instructions 5"
+    "style": "game instructions 5",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_20_medium_2",
@@ -297,7 +384,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "20",
-    "style": "medium 2"
+    "style": "medium 2",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_20_short_1",
@@ -307,7 +397,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "20",
-    "style": "short 1"
+    "style": "short 1",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_50_conversation_11",
@@ -317,7 +410,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "50",
-    "style": "conversation 11"
+    "style": "conversation 11",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_50_emotional_10",
@@ -327,7 +423,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "50",
-    "style": "emotional 10"
+    "style": "emotional 10",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_50_game_instructions_12",
@@ -337,7 +436,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "50",
-    "style": "game instructions 12"
+    "style": "game instructions 12",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_50_medium_8",
@@ -347,7 +449,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "50",
-    "style": "medium 8"
+    "style": "medium 8",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_50_short_7",
@@ -357,7 +462,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "50",
-    "style": "short 7"
+    "style": "short 7",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_80_conversation_18",
@@ -367,7 +475,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "80",
-    "style": "conversation 18"
+    "style": "conversation 18",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_80_game_instructions_19",
@@ -377,7 +488,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "80",
-    "style": "game instructions 19"
+    "style": "game instructions 19",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.1_topk_80_technical_16",
@@ -387,7 +501,10 @@
     "speaker_id": "2",
     "temperature": "1.1",
     "topk": "80",
-    "style": "technical 16"
+    "style": "technical 16",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_20_accent_variation_26",
@@ -397,7 +514,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "20",
-    "style": "accent variation 26"
+    "style": "accent variation 26",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_20_conversation_24",
@@ -407,7 +527,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "20",
-    "style": "conversation 24"
+    "style": "conversation 24",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_20_medium_22",
@@ -417,7 +540,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "20",
-    "style": "medium 22"
+    "style": "medium 22",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_20_medium_246",
@@ -427,7 +553,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "20",
-    "style": "medium 246"
+    "style": "medium 246",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_20_short_21",
@@ -437,7 +566,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "20",
-    "style": "short 21"
+    "style": "short 21",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_50_accent_variation_33",
@@ -447,7 +579,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "50",
-    "style": "accent variation 33"
+    "style": "accent variation 33",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_50_conversation_255",
@@ -457,7 +592,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "50",
-    "style": "conversation 255"
+    "style": "conversation 255",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_50_conversation_31",
@@ -467,7 +605,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "50",
-    "style": "conversation 31"
+    "style": "conversation 31",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_50_emotional_30",
@@ -477,7 +618,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "50",
-    "style": "emotional 30"
+    "style": "emotional 30",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_50_game_instructions_32",
@@ -487,7 +631,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "50",
-    "style": "game instructions 32"
+    "style": "game instructions 32",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_50_technical_29",
@@ -497,7 +644,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "50",
-    "style": "technical 29"
+    "style": "technical 29",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_80_accent_variation_40",
@@ -507,7 +657,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "80",
-    "style": "accent variation 40"
+    "style": "accent variation 40",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_80_conversation_38",
@@ -517,7 +670,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "80",
-    "style": "conversation 38"
+    "style": "conversation 38",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_80_emotional_37",
@@ -527,7 +683,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "80",
-    "style": "emotional 37"
+    "style": "emotional 37",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_2_temp_1.3_topk_80_game_instructions_39",
@@ -537,7 +696,10 @@
     "speaker_id": "2",
     "temperature": "1.3",
     "topk": "80",
-    "style": "game instructions 39"
+    "style": "game instructions 39",
+    "character_name": "Emily Winters",
+    "character_role": "AI Assistant",
+    "character_description": "A friendly and helpful voice with a calm and reassuring tone."
   },
   {
     "filename": "speaker_3_temp_0.5_topk_80_technical_276",
@@ -547,7 +709,10 @@
     "speaker_id": "3",
     "temperature": "0.5",
     "topk": "80",
-    "style": "technical 276"
+    "style": "technical 276",
+    "character_name": "Michael Chen",
+    "character_role": "Technical Instructor",
+    "character_description": "A precise and articulate speaker who excels at explaining complex topics clearly."
   },
   {
     "filename": "speaker_3_temp_0.9_topk_20_accent_variation_298",
@@ -557,7 +722,10 @@
     "speaker_id": "3",
     "temperature": "0.9",
     "topk": "20",
-    "style": "accent variation 298"
+    "style": "accent variation 298",
+    "character_name": "Michael Chen",
+    "character_role": "Technical Instructor",
+    "character_description": "A precise and articulate speaker who excels at explaining complex topics clearly."
   },
   {
     "filename": "speaker_3_temp_0.9_topk_50_medium_300",
@@ -567,7 +735,10 @@
     "speaker_id": "3",
     "temperature": "0.9",
     "topk": "50",
-    "style": "medium 300"
+    "style": "medium 300",
+    "character_name": "Michael Chen",
+    "character_role": "Technical Instructor",
+    "character_description": "A precise and articulate speaker who excels at explaining complex topics clearly."
   },
   {
     "filename": "speaker_3_temp_0.9_topk_50_short_299",
@@ -577,7 +748,10 @@
     "speaker_id": "3",
     "temperature": "0.9",
     "topk": "50",
-    "style": "short 299"
+    "style": "short 299",
+    "character_name": "Michael Chen",
+    "character_role": "Technical Instructor",
+    "character_description": "A precise and articulate speaker who excels at explaining complex topics clearly."
   },
   {
     "filename": "speaker_3_temp_1.1_topk_50_emotional_150",
@@ -587,7 +761,10 @@
     "speaker_id": "3",
     "temperature": "1.1",
     "topk": "50",
-    "style": "emotional 150"
+    "style": "emotional 150",
+    "character_name": "Michael Chen",
+    "character_role": "Technical Instructor",
+    "character_description": "A precise and articulate speaker who excels at explaining complex topics clearly."
   },
   {
     "filename": "speaker_3_temp_1.1_topk_80_technical_156",
@@ -597,7 +774,10 @@
     "speaker_id": "3",
     "temperature": "1.1",
     "topk": "80",
-    "style": "technical 156"
+    "style": "technical 156",
+    "character_name": "Michael Chen",
+    "character_role": "Technical Instructor",
+    "character_description": "A precise and articulate speaker who excels at explaining complex topics clearly."
   },
   {
     "filename": "speaker_3_temp_1.3_topk_20_accent_variation_338",
@@ -607,7 +787,10 @@
     "speaker_id": "3",
     "temperature": "1.3",
     "topk": "20",
-    "style": "accent variation 338"
+    "style": "accent variation 338",
+    "character_name": "Michael Chen",
+    "character_role": "Technical Instructor",
+    "character_description": "A precise and articulate speaker who excels at explaining complex topics clearly."
   },
   {
     "filename": "speaker_3_temp_1.3_topk_20_emotional_163",
@@ -617,7 +800,10 @@
     "speaker_id": "3",
     "temperature": "1.3",
     "topk": "20",
-    "style": "emotional 163"
+    "style": "emotional 163",
+    "character_name": "Michael Chen",
+    "character_role": "Technical Instructor",
+    "character_description": "A precise and articulate speaker who excels at explaining complex topics clearly."
   },
   {
     "filename": "speaker_4_temp_0.75_topk_50_medium_372",
@@ -627,7 +813,10 @@
     "speaker_id": "4",
     "temperature": "0.75",
     "topk": "50",
-    "style": "medium 372"
+    "style": "medium 372",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_0.75_topk_50_short_371",
@@ -637,7 +826,10 @@
     "speaker_id": "4",
     "temperature": "0.75",
     "topk": "50",
-    "style": "short 371"
+    "style": "short 371",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_0.75_topk_80_conversation_379",
@@ -647,7 +839,10 @@
     "speaker_id": "4",
     "temperature": "0.75",
     "topk": "80",
-    "style": "conversation 379"
+    "style": "conversation 379",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_0.9_topk_20_game_instructions_385",
@@ -657,7 +852,10 @@
     "speaker_id": "4",
     "temperature": "0.9",
     "topk": "20",
-    "style": "game instructions 385"
+    "style": "game instructions 385",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_0.9_topk_50_emotional_190",
@@ -667,7 +865,10 @@
     "speaker_id": "4",
     "temperature": "0.9",
     "topk": "50",
-    "style": "emotional 190"
+    "style": "emotional 190",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_0.9_topk_50_game_instructions_192",
@@ -677,7 +878,10 @@
     "speaker_id": "4",
     "temperature": "0.9",
     "topk": "50",
-    "style": "game instructions 192"
+    "style": "game instructions 192",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_0.9_topk_80_accent_variation_200",
@@ -687,7 +891,10 @@
     "speaker_id": "4",
     "temperature": "0.9",
     "topk": "80",
-    "style": "accent variation 200"
+    "style": "accent variation 200",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_0.9_topk_80_short_394",
@@ -697,7 +904,10 @@
     "speaker_id": "4",
     "temperature": "0.9",
     "topk": "80",
-    "style": "short 394"
+    "style": "short 394",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_1.1_topk_20_accent_variation_406",
@@ -707,7 +917,10 @@
     "speaker_id": "4",
     "temperature": "1.1",
     "topk": "20",
-    "style": "accent variation 406"
+    "style": "accent variation 406",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_1.1_topk_20_emotional_403",
@@ -717,7 +930,10 @@
     "speaker_id": "4",
     "temperature": "1.1",
     "topk": "20",
-    "style": "emotional 403"
+    "style": "emotional 403",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_1.1_topk_20_short_201",
@@ -727,7 +943,10 @@
     "speaker_id": "4",
     "temperature": "1.1",
     "topk": "20",
-    "style": "short 201"
+    "style": "short 201",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_1.1_topk_50_short_207",
@@ -737,7 +956,10 @@
     "speaker_id": "4",
     "temperature": "1.1",
     "topk": "50",
-    "style": "short 207"
+    "style": "short 207",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_1.3_topk_20_conversation_424",
@@ -747,7 +969,10 @@
     "speaker_id": "4",
     "temperature": "1.3",
     "topk": "20",
-    "style": "conversation 424"
+    "style": "conversation 424",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_1.3_topk_20_medium_422",
@@ -757,7 +982,10 @@
     "speaker_id": "4",
     "temperature": "1.3",
     "topk": "20",
-    "style": "medium 422"
+    "style": "medium 422",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_1.3_topk_80_conversation_238",
@@ -767,7 +995,10 @@
     "speaker_id": "4",
     "temperature": "1.3",
     "topk": "80",
-    "style": "conversation 238"
+    "style": "conversation 238",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_4_temp_1.3_topk_80_technical_236",
@@ -777,7 +1008,10 @@
     "speaker_id": "4",
     "temperature": "1.3",
     "topk": "80",
-    "style": "technical 236"
+    "style": "technical 236",
+    "character_name": "Sophia Rodriguez",
+    "character_role": "Virtual Guide",
+    "character_description": "A warm and engaging voice that guides users through digital experiences."
   },
   {
     "filename": "speaker_5_temp_0.5_topk_50_conversation_448",
@@ -787,7 +1021,10 @@
     "speaker_id": "5",
     "temperature": "0.5",
     "topk": "50",
-    "style": "conversation 448"
+    "style": "conversation 448",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_0.75_topk_20_game_instructions_458",
@@ -797,7 +1034,10 @@
     "speaker_id": "5",
     "temperature": "0.75",
     "topk": "20",
-    "style": "game instructions 458"
+    "style": "game instructions 458",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_0.75_topk_20_medium_456",
@@ -807,7 +1047,10 @@
     "speaker_id": "5",
     "temperature": "0.75",
     "topk": "20",
-    "style": "medium 456"
+    "style": "medium 456",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_0.9_topk_20_conversation_472",
@@ -817,7 +1060,10 @@
     "speaker_id": "5",
     "temperature": "0.9",
     "topk": "20",
-    "style": "conversation 472"
+    "style": "conversation 472",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_20_accent_variation_46",
@@ -827,7 +1073,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "20",
-    "style": "accent variation 46"
+    "style": "accent variation 46",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_20_conversation_44",
@@ -837,7 +1086,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "20",
-    "style": "conversation 44"
+    "style": "conversation 44",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_20_game_instructions_45",
@@ -847,7 +1099,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "20",
-    "style": "game instructions 45"
+    "style": "game instructions 45",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_20_medium_42",
@@ -857,7 +1112,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "20",
-    "style": "medium 42"
+    "style": "medium 42",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_50_emotional_50",
@@ -867,7 +1125,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "50",
-    "style": "emotional 50"
+    "style": "emotional 50",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_50_game_instructions_52",
@@ -877,7 +1138,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "50",
-    "style": "game instructions 52"
+    "style": "game instructions 52",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_50_technical_49",
@@ -887,7 +1151,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "50",
-    "style": "technical 49"
+    "style": "technical 49",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_80_accent_variation_60",
@@ -897,7 +1164,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "80",
-    "style": "accent variation 60"
+    "style": "accent variation 60",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_80_conversation_506",
@@ -907,7 +1177,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "80",
-    "style": "conversation 506"
+    "style": "conversation 506",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_80_emotional_57",
@@ -917,7 +1190,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "80",
-    "style": "emotional 57"
+    "style": "emotional 57",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_80_game_instructions_59",
@@ -927,7 +1203,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "80",
-    "style": "game instructions 59"
+    "style": "game instructions 59",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_80_medium_55",
@@ -937,7 +1216,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "80",
-    "style": "medium 55"
+    "style": "medium 55",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_80_short_54",
@@ -947,7 +1229,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "80",
-    "style": "short 54"
+    "style": "short 54",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.1_topk_80_technical_56",
@@ -957,7 +1242,10 @@
     "speaker_id": "5",
     "temperature": "1.1",
     "topk": "80",
-    "style": "technical 56"
+    "style": "technical 56",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_20_medium_510",
@@ -967,7 +1255,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "20",
-    "style": "medium 510"
+    "style": "medium 510",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_20_medium_62",
@@ -977,7 +1268,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "20",
-    "style": "medium 62"
+    "style": "medium 62",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_20_short_61",
@@ -987,7 +1281,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "20",
-    "style": "short 61"
+    "style": "short 61",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_50_conversation_71",
@@ -997,7 +1294,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "50",
-    "style": "conversation 71"
+    "style": "conversation 71",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_50_emotional_70",
@@ -1007,7 +1307,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "50",
-    "style": "emotional 70"
+    "style": "emotional 70",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_50_medium_516",
@@ -1017,7 +1320,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "50",
-    "style": "medium 516"
+    "style": "medium 516",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_50_short_67",
@@ -1027,7 +1333,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "50",
-    "style": "short 67"
+    "style": "short 67",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_50_technical_69",
@@ -1037,7 +1346,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "50",
-    "style": "technical 69"
+    "style": "technical 69",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_80_accent_variation_80",
@@ -1047,7 +1359,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "80",
-    "style": "accent variation 80"
+    "style": "accent variation 80",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_80_conversation_78",
@@ -1057,7 +1372,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "80",
-    "style": "conversation 78"
+    "style": "conversation 78",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_80_emotional_77",
@@ -1067,7 +1385,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "80",
-    "style": "emotional 77"
+    "style": "emotional 77",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_80_medium_75",
@@ -1077,7 +1398,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "80",
-    "style": "medium 75"
+    "style": "medium 75",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_80_technical_524",
@@ -1087,7 +1411,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "80",
-    "style": "technical 524"
+    "style": "technical 524",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_5_temp_1.3_topk_80_technical_76",
@@ -1097,7 +1424,10 @@
     "speaker_id": "5",
     "temperature": "1.3",
     "topk": "80",
-    "style": "technical 76"
+    "style": "technical 76",
+    "character_name": "David Johnson",
+    "character_role": "News Anchor",
+    "character_description": "A professional and authoritative voice for news and informational content."
   },
   {
     "filename": "speaker_6_temp_0.9_topk_50_accent_variation_253",
@@ -1107,7 +1437,10 @@
     "speaker_id": "6",
     "temperature": "0.9",
     "topk": "50",
-    "style": "accent variation 253"
+    "style": "accent variation 253",
+    "character_name": "Olivia Parker",
+    "character_role": "Meditation Coach",
+    "character_description": "A soothing voice with excellent pacing for relaxation and mindfulness content."
   },
   {
     "filename": "speaker_6_temp_1.1_topk_20_game_instructions_581",
@@ -1117,7 +1450,10 @@
     "speaker_id": "6",
     "temperature": "1.1",
     "topk": "20",
-    "style": "game instructions 581"
+    "style": "game instructions 581",
+    "character_name": "Olivia Parker",
+    "character_role": "Meditation Coach",
+    "character_description": "A soothing voice with excellent pacing for relaxation and mindfulness content."
   },
   {
     "filename": "speaker_6_temp_1.1_topk_50_accent_variation_273",
@@ -1127,7 +1463,10 @@
     "speaker_id": "6",
     "temperature": "1.1",
     "topk": "50",
-    "style": "accent variation 273"
+    "style": "accent variation 273",
+    "character_name": "Olivia Parker",
+    "character_role": "Meditation Coach",
+    "character_description": "A soothing voice with excellent pacing for relaxation and mindfulness content."
   },
   {
     "filename": "speaker_6_temp_1.1_topk_50_game_instructions_588",
@@ -1137,7 +1476,10 @@
     "speaker_id": "6",
     "temperature": "1.1",
     "topk": "50",
-    "style": "game instructions 588"
+    "style": "game instructions 588",
+    "character_name": "Olivia Parker",
+    "character_role": "Meditation Coach",
+    "character_description": "A soothing voice with excellent pacing for relaxation and mindfulness content."
   },
   {
     "filename": "speaker_6_temp_1.1_topk_80_conversation_278",
@@ -1147,7 +1489,10 @@
     "speaker_id": "6",
     "temperature": "1.1",
     "topk": "80",
-    "style": "conversation 278"
+    "style": "conversation 278",
+    "character_name": "Olivia Parker",
+    "character_role": "Meditation Coach",
+    "character_description": "A soothing voice with excellent pacing for relaxation and mindfulness content."
   },
   {
     "filename": "speaker_6_temp_1.3_topk_80_emotional_613",
@@ -1157,7 +1502,10 @@
     "speaker_id": "6",
     "temperature": "1.3",
     "topk": "80",
-    "style": "emotional 613"
+    "style": "emotional 613",
+    "character_name": "Olivia Parker",
+    "character_role": "Meditation Coach",
+    "character_description": "A soothing voice with excellent pacing for relaxation and mindfulness content."
   },
   {
     "filename": "speaker_7_temp_0.5_topk_20_short_617",
@@ -1167,7 +1515,10 @@
     "speaker_id": "7",
     "temperature": "0.5",
     "topk": "20",
-    "style": "short 617"
+    "style": "short 617",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_0.9_topk_20_short_645",
@@ -1177,7 +1528,10 @@
     "speaker_id": "7",
     "temperature": "0.9",
     "topk": "20",
-    "style": "short 645"
+    "style": "short 645",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_0.9_topk_50_conversation_with_context_125",
@@ -1187,7 +1541,10 @@
     "speaker_id": "7",
     "temperature": "0.9",
     "topk": "50",
-    "style": "conversation with context 125"
+    "style": "conversation with context 125",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_0.9_topk_50_conversation_with_context_126",
@@ -1197,7 +1554,10 @@
     "speaker_id": "7",
     "temperature": "0.9",
     "topk": "50",
-    "style": "conversation with context 126"
+    "style": "conversation with context 126",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_0.9_topk_80_accent_variation_664",
@@ -1207,7 +1567,10 @@
     "speaker_id": "7",
     "temperature": "0.9",
     "topk": "80",
-    "style": "accent variation 664"
+    "style": "accent variation 664",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_20_accent_variation_86",
@@ -1217,7 +1580,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "20",
-    "style": "accent variation 86"
+    "style": "accent variation 86",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_20_conversation_84",
@@ -1227,7 +1593,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "20",
-    "style": "conversation 84"
+    "style": "conversation 84",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_20_emotional_83",
@@ -1237,7 +1606,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "20",
-    "style": "emotional 83"
+    "style": "emotional 83",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_20_game_instructions_85",
@@ -1247,7 +1619,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "20",
-    "style": "game instructions 85"
+    "style": "game instructions 85",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_20_medium_82",
@@ -1257,7 +1632,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "20",
-    "style": "medium 82"
+    "style": "medium 82",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_50_accent_variation_677",
@@ -1267,7 +1645,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "50",
-    "style": "accent variation 677"
+    "style": "accent variation 677",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_50_accent_variation_93",
@@ -1277,7 +1658,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "50",
-    "style": "accent variation 93"
+    "style": "accent variation 93",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_50_conversation_675",
@@ -1287,7 +1671,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "50",
-    "style": "conversation 675"
+    "style": "conversation 675",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_50_conversation_91",
@@ -1297,7 +1684,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "50",
-    "style": "conversation 91"
+    "style": "conversation 91",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_50_emotional_90",
@@ -1307,7 +1697,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "50",
-    "style": "emotional 90"
+    "style": "emotional 90",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_50_game_instructions_676",
@@ -1317,7 +1710,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "50",
-    "style": "game instructions 676"
+    "style": "game instructions 676",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_50_short_87",
@@ -1327,7 +1723,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "50",
-    "style": "short 87"
+    "style": "short 87",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_80_accent_variation_100",
@@ -1337,7 +1736,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "80",
-    "style": "accent variation 100"
+    "style": "accent variation 100",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_80_conversation_98",
@@ -1347,7 +1749,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "80",
-    "style": "conversation 98"
+    "style": "conversation 98",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_80_emotional_97",
@@ -1357,7 +1762,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "80",
-    "style": "emotional 97"
+    "style": "emotional 97",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_80_game_instructions_99",
@@ -1367,7 +1775,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "80",
-    "style": "game instructions 99"
+    "style": "game instructions 99",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.1_topk_80_technical_96",
@@ -1377,7 +1788,10 @@
     "speaker_id": "7",
     "temperature": "1.1",
     "topk": "80",
-    "style": "technical 96"
+    "style": "technical 96",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_20_accent_variation_106",
@@ -1387,7 +1801,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "20",
-    "style": "accent variation 106"
+    "style": "accent variation 106",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_20_conversation_104",
@@ -1397,7 +1814,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "20",
-    "style": "conversation 104"
+    "style": "conversation 104",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_20_emotional_103",
@@ -1407,7 +1827,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "20",
-    "style": "emotional 103"
+    "style": "emotional 103",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_20_game_instructions_105",
@@ -1417,7 +1840,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "20",
-    "style": "game instructions 105"
+    "style": "game instructions 105",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_50_accent_variation_113",
@@ -1427,7 +1853,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "50",
-    "style": "accent variation 113"
+    "style": "accent variation 113",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_50_conversation_111",
@@ -1437,7 +1866,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "50",
-    "style": "conversation 111"
+    "style": "conversation 111",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_50_medium_108",
@@ -1447,7 +1879,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "50",
-    "style": "medium 108"
+    "style": "medium 108",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_50_short_107",
@@ -1457,7 +1892,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "50",
-    "style": "short 107"
+    "style": "short 107",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_50_technical_109",
@@ -1467,7 +1905,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "50",
-    "style": "technical 109"
+    "style": "technical 109",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_80_accent_variation_120",
@@ -1477,7 +1918,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "80",
-    "style": "accent variation 120"
+    "style": "accent variation 120",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_80_conversation_118",
@@ -1487,7 +1931,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "80",
-    "style": "conversation 118"
+    "style": "conversation 118",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_80_emotional_117",
@@ -1497,7 +1944,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "80",
-    "style": "emotional 117"
+    "style": "emotional 117",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_80_game_instructions_119",
@@ -1507,7 +1957,10 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "80",
-    "style": "game instructions 119"
+    "style": "game instructions 119",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   },
   {
     "filename": "speaker_7_temp_1.3_topk_80_technical_116",
@@ -1517,6 +1970,9 @@
     "speaker_id": "7",
     "temperature": "1.3",
     "topk": "80",
-    "style": "technical 116"
+    "style": "technical 116",
+    "character_name": "Nathan Williams",
+    "character_role": "Adventure Narrator",
+    "character_description": "An energetic storyteller who brings adventure and excitement to any narrative."
   }
 ]

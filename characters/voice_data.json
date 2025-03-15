@@ -1,0 +1,1234 @@
+[
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_accent_variation_120",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_80_accent_variation_120.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_1.1_topk_20_short_201",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_1.1_topk_20_short_201.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_80_conversation_38",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_80_conversation_38.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_short_54",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_80_short_54.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_conversation_71",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_50_conversation_71.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_0.9_topk_50_conversation_with_context_122",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_0.9_topk_50_conversation_with_context_122.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_024",
+    "file_path": "hdmy5movie_voices/explore/sample_024.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_0.9_topk_50_conversation_with_context_126",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_0.9_topk_50_conversation_with_context_126.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_50_technical_49",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_50_technical_49.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_0.75_topk_20_game_instructions_458",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_0.75_topk_20_game_instructions_458.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_0.9_topk_50_conversation_with_context_125",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_0.9_topk_50_conversation_with_context_125.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_game_instructions_85",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_20_game_instructions_85.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_50_short_55",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_1.1_topk_50_short_55.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_1.3_topk_80_medium_55",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_1.3_topk_80_medium_55.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_conversation_24",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_20_conversation_24.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_0.9_topk_50_conversation_with_context_709",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_0.9_topk_50_conversation_with_context_709.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_80_accent_variation_40",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_80_accent_variation_40.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_20_conversation_104",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_20_conversation_104.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_20_game_instructions_45",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_20_game_instructions_45.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_1.3_topk_20_conversation_424",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_1.3_topk_20_conversation_424.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_0.9_topk_80_accent_variation_664",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_0.9_topk_80_accent_variation_664.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_6_temp_1.3_topk_80_emotional_613",
+    "file_path": "hdmy5movie_voices/explore/speaker_6_temp_1.3_topk_80_emotional_613.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_003",
+    "file_path": "hdmy5movie_voices/explore/sample_003.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_medium_2",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_20_medium_2.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_1.1_topk_20_accent_variation_406",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_1.1_topk_20_accent_variation_406.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_006",
+    "file_path": "hdmy5movie_voices/explore/sample_006.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_technical_109",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_50_technical_109.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_80_accent_variation_68",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_1.1_topk_80_accent_variation_68.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_game_instructions_99",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_80_game_instructions_99.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_80_game_instructions_39",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_1.1_topk_80_game_instructions_39.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_1_temp_0.5_topk_80_short_98",
+    "file_path": "hdmy5movie_voices/explore/speaker_1_temp_0.5_topk_80_short_98.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_technical_524",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_80_technical_524.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_game_instructions_12",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_50_game_instructions_12.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_1_temp_0.9_topk_20_accent_variation_122",
+    "file_path": "hdmy5movie_voices/explore/speaker_1_temp_0.9_topk_20_accent_variation_122.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_6_temp_1.1_topk_50_accent_variation_273",
+    "file_path": "hdmy5movie_voices/explore/speaker_6_temp_1.1_topk_50_accent_variation_273.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_015",
+    "file_path": "hdmy5movie_voices/explore/sample_015.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_20_medium_42",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_20_medium_42.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_012",
+    "file_path": "hdmy5movie_voices/explore/sample_012.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_accent_variation_677",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_50_accent_variation_677.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_3_temp_1.1_topk_50_emotional_150",
+    "file_path": "hdmy5movie_voices/explore/speaker_3_temp_1.1_topk_50_emotional_150.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_20_conversation_44",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_20_conversation_44.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_80_short_394",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_0.9_topk_80_short_394.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_013",
+    "file_path": "hdmy5movie_voices/explore/sample_013.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_0.5_topk_50_conversation_448",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_0.5_topk_50_conversation_448.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_accent_variation_100",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_80_accent_variation_100.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_001",
+    "file_path": "hdmy5movie_voices/explore/sample_001.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_conversation_98",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_80_conversation_98.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_3_temp_0.9_topk_20_accent_variation_298",
+    "file_path": "hdmy5movie_voices/explore/speaker_3_temp_0.9_topk_20_accent_variation_298.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_1_temp_1.1_topk_80_medium_151",
+    "file_path": "hdmy5movie_voices/explore/speaker_1_temp_1.1_topk_80_medium_151.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_0.9_topk_50_conversation_11",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_0.9_topk_50_conversation_11.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_0.75_topk_80_conversation_379",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_0.75_topk_80_conversation_379.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_6_temp_1.1_topk_50_game_instructions_588",
+    "file_path": "hdmy5movie_voices/explore/speaker_6_temp_1.1_topk_50_game_instructions_588.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_80_conversation_66",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_1.1_topk_80_conversation_66.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_20_medium_62",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_20_medium_62.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_50_game_instructions_192",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_0.9_topk_50_game_instructions_192.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_medium_82",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_20_medium_82.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_conversation_506",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_80_conversation_506.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_3_temp_1.1_topk_80_technical_156",
+    "file_path": "hdmy5movie_voices/explore/speaker_3_temp_1.1_topk_80_technical_156.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_1_temp_1.3_topk_50_conversation_167",
+    "file_path": "hdmy5movie_voices/explore/speaker_1_temp_1.3_topk_50_conversation_167.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_50_game_instructions_52",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_50_game_instructions_52.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_accent_variation_26",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_20_accent_variation_26.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_007",
+    "file_path": "hdmy5movie_voices/explore/sample_007.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_6_temp_0.9_topk_50_accent_variation_253",
+    "file_path": "hdmy5movie_voices/explore/speaker_6_temp_0.9_topk_50_accent_variation_253.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_game_instructions_32",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_50_game_instructions_32.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_80_game_instructions_39",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_80_game_instructions_39.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_0.75_topk_20_game_instructions_18",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_0.75_topk_20_game_instructions_18.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_6_temp_1.1_topk_80_conversation_278",
+    "file_path": "hdmy5movie_voices/explore/speaker_6_temp_1.1_topk_80_conversation_278.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_020",
+    "file_path": "hdmy5movie_voices/explore/sample_020.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_medium_108",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_50_medium_108.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_20_accent_variation_106",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_20_accent_variation_106.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_emotional_117",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_80_emotional_117.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_0.5_topk_80_short_10",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_0.5_topk_80_short_10.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_3_temp_0.9_topk_50_short_299",
+    "file_path": "hdmy5movie_voices/explore/speaker_3_temp_0.9_topk_50_short_299.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_011",
+    "file_path": "hdmy5movie_voices/explore/sample_011.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_017",
+    "file_path": "hdmy5movie_voices/explore/sample_017.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_short_87",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_50_short_87.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_20_short_61",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_20_short_61.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_004",
+    "file_path": "hdmy5movie_voices/explore/sample_004.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_1_temp_1.1_topk_50_game_instructions_92",
+    "file_path": "hdmy5movie_voices/explore/speaker_1_temp_1.1_topk_50_game_instructions_92.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_20_medium_510",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_20_medium_510.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_022",
+    "file_path": "hdmy5movie_voices/explore/sample_022.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_technical_76",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_80_technical_76.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_short_67",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_50_short_67.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_short_107",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_50_short_107.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_emotional_83",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_20_emotional_83.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_019",
+    "file_path": "hdmy5movie_voices/explore/sample_019.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_conversation_84",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_20_conversation_84.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_technical_29",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_50_technical_29.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_1.3_topk_80_technical_236",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_1.3_topk_80_technical_236.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_conversation_31",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_50_conversation_31.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_3_temp_0.9_topk_50_medium_300",
+    "file_path": "hdmy5movie_voices/explore/speaker_3_temp_0.9_topk_50_medium_300.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_0.9_topk_50_medium_8",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_0.9_topk_50_medium_8.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_accent_variation_86",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_20_accent_variation_86.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_conversation_118",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_80_conversation_118.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_conversation_4",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_20_conversation_4.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_emotional_30",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_50_emotional_30.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_accent_variation_93",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_50_accent_variation_93.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_3_temp_0.5_topk_80_technical_276",
+    "file_path": "hdmy5movie_voices/explore/speaker_3_temp_0.5_topk_80_technical_276.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_1.1_topk_50_short_207",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_1.1_topk_50_short_207.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_conversation_675",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_50_conversation_675.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_accent_variation_60",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_80_accent_variation_60.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_0.9_topk_80_accent_variation_224",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_0.9_topk_80_accent_variation_224.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_008",
+    "file_path": "hdmy5movie_voices/explore/sample_008.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_021",
+    "file_path": "hdmy5movie_voices/explore/sample_021.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_20_accent_variation_46",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_20_accent_variation_46.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_medium_75",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_80_medium_75.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_0.75_topk_50_medium_372",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_0.75_topk_50_medium_372.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_0.5_topk_20_short_617",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_0.5_topk_20_short_617.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_accent_variation_80",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_80_accent_variation_80.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_005",
+    "file_path": "hdmy5movie_voices/explore/sample_005.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_3_temp_1.3_topk_20_accent_variation_338",
+    "file_path": "hdmy5movie_voices/explore/speaker_3_temp_1.3_topk_20_accent_variation_338.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_conversation_111",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_50_conversation_111.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_80_emotional_37",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_80_emotional_37.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_002",
+    "file_path": "hdmy5movie_voices/explore/sample_002.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_0.9_topk_20_conversation_472",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_0.9_topk_20_conversation_472.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_technical_116",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_80_technical_116.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_1_temp_1.3_topk_80_short_170",
+    "file_path": "hdmy5movie_voices/explore/speaker_1_temp_1.3_topk_80_short_170.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_1_temp_1.3_topk_80_game_instructions_119",
+    "file_path": "hdmy5movie_voices/explore/speaker_1_temp_1.3_topk_80_game_instructions_119.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_emotional_10",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_50_emotional_10.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_0.75_topk_20_medium_456",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_0.75_topk_20_medium_456.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_1.3_topk_20_medium_422",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_1.3_topk_20_medium_422.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_emotional_70",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_50_emotional_70.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_016",
+    "file_path": "hdmy5movie_voices/explore/sample_016.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_023",
+    "file_path": "hdmy5movie_voices/explore/sample_023.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_010",
+    "file_path": "hdmy5movie_voices/explore/sample_010.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_0.5_topk_50_technical_7",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_0.5_topk_50_technical_7.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_80_conversation_18",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_80_conversation_18.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_short_1",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_20_short_1.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_0.9_topk_20_accent_variation_34",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_0.9_topk_20_accent_variation_34.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_accent_variation_113",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_50_accent_variation_113.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_80_accent_variation_200",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_0.9_topk_80_accent_variation_200.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_emotional_3",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_20_emotional_3.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_game_instructions_5",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_20_game_instructions_5.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_game_instructions_676",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_50_game_instructions_676.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_1.1_topk_20_emotional_403",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_1.1_topk_20_emotional_403.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_short_7",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_50_short_7.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_medium_516",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_50_medium_516.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_technical_96",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_80_technical_96.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_0.75_topk_50_short_371",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_0.75_topk_50_short_371.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_20_game_instructions_385",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_0.9_topk_20_game_instructions_385.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_018",
+    "file_path": "hdmy5movie_voices/explore/sample_018.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_50_emotional_190",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_0.9_topk_50_emotional_190.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_20_game_instructions_105",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_20_game_instructions_105.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_conversation_91",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_50_conversation_91.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_0.75_topk_50_game_instructions_23",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_0.75_topk_50_game_instructions_23.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_game_instructions_119",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_80_game_instructions_119.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_3_temp_1.3_topk_20_emotional_163",
+    "file_path": "hdmy5movie_voices/explore/speaker_3_temp_1.3_topk_20_emotional_163.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_technical_56",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_80_technical_56.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_medium_246",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_20_medium_246.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_50_emotional_50",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_50_emotional_50.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_conversation_11",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_50_conversation_11.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_conversation_255",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_50_conversation_255.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_technical_69",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_50_technical_69.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_short_21",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_20_short_21.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_medium_22",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_20_medium_22.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_emotional_97",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_80_emotional_97.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_game_instructions_59",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_80_game_instructions_59.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_009",
+    "file_path": "hdmy5movie_voices/explore/sample_009.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_accent_variation_230",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_20_accent_variation_230.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_20_emotional_51",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_1.1_topk_20_emotional_51.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_80_technical_16",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_80_technical_16.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_emotional_227",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_20_emotional_227.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_conversation_78",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_80_conversation_78.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_emotional_77",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.3_topk_80_emotional_77.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "sample_014",
+    "file_path": "hdmy5movie_voices/explore/sample_014.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_0.9_topk_20_short_645",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_0.9_topk_20_short_645.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_6_temp_1.1_topk_20_game_instructions_581",
+    "file_path": "hdmy5movie_voices/explore/speaker_6_temp_1.1_topk_20_game_instructions_581.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_50_medium_28",
+    "file_path": "hdmy5movie_voices/explore/speaker_0_temp_1.1_topk_50_medium_28.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_emotional_90",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.1_topk_50_emotional_90.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_medium_8",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_50_medium_8.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_80_game_instructions_19",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.1_topk_80_game_instructions_19.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_20_emotional_103",
+    "file_path": "hdmy5movie_voices/explore/speaker_7_temp_1.3_topk_20_emotional_103.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_4_temp_1.3_topk_80_conversation_238",
+    "file_path": "hdmy5movie_voices/explore/speaker_4_temp_1.3_topk_80_conversation_238.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_accent_variation_33",
+    "file_path": "hdmy5movie_voices/explore/speaker_2_temp_1.3_topk_50_accent_variation_33.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_emotional_57",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_80_emotional_57.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_medium_55",
+    "file_path": "hdmy5movie_voices/explore/speaker_5_temp_1.1_topk_80_medium_55.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "gender_model": "ECAPA-TDNN (original)"
+  }
+]

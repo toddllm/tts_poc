@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS Debug Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, textarea, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .debug-panel {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            height: 200px;
+            overflow-y: auto;
+            font-family: monospace;
+        }
+        .debug-entry {
+            margin-bottom: 5px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .debug-time {
+            color: #888;
+            font-size: 0.8em;
+        }
+        .debug-message {
+            margin-left: 10px;
+        }
+        .error {
+            color: #d9534f;
+        }
+        .success {
+            color: #5cb85c;
+        }
+        .warning {
+            color: #f0ad4e;
+        }
+        .info {
+            color: #5bc0de;
+        }
+        .audio-player {
+            margin-top: 20px;
+            width: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+        .diagnostic-button {
+            background-color: #f0ad4e;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TTS Debug Page</h1>
+    
+    <div class="form-group">
+        <label for="voice-select">Voice:</label>
+        <select id="voice-select">
+            <option value="">Loading voices...</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="text-input">Text:</label>
+        <textarea id="text-input" placeholder="Enter text to convert to speech">This is a test of the text to speech system.</textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="device-select">Device:</label>
+        <select id="device-select">
+            <option value="auto">Auto (default)</option>
+            <option value="cuda">CUDA (GPU)</option>
+            <option value="cpu">CPU</option>
+        </select>
+    </div>
+    
+    <button id="generate-button">Generate Speech</button>
+    <button id="diagnostic-button" class="diagnostic-button">Run Server Diagnostic</button>
+    
+    <div id="audio-container" class="audio-player hidden">
+        <h3>Generated Audio:</h3>
+        <audio id="audio-player" controls></audio>
+        <p id="audio-path"></p>
+    </div>
+    
+    <h3>Debug Panel:</h3>
+    <div id="debug-panel" class="debug-panel"></div>
+    
+    <script>
+        // Configuration
+        const API_BASE_URL = 'http://localhost:8080';
+        
+        // DOM Elements
+        const voiceSelect = document.getElementById('voice-select');
+        const textInput = document.getElementById('text-input');
+        const deviceSelect = document.getElementById('device-select');
+        const generateButton = document.getElementById('generate-button');
+        const diagnosticButton = document.getElementById('diagnostic-button');
+        const audioContainer = document.getElementById('audio-container');
+        const audioPlayer = document.getElementById('audio-player');
+        const audioPath = document.getElementById('audio-path');
+        const debugPanel = document.getElementById('debug-panel');
+        
+        // Debug logging
+        function logDebug(message, type = 'info') {
+            const entry = document.createElement('div');
+            entry.className = `debug-entry ${type}`;
+            
+            const time = document.createElement('span');
+            time.className = 'debug-time';
+            time.textContent = new Date().toLocaleTimeString();
+            
+            const msg = document.createElement('span');
+            msg.className = 'debug-message';
+            msg.textContent = message;
+            
+            entry.appendChild(time);
+            entry.appendChild(msg);
+            
+            debugPanel.appendChild(entry);
+            debugPanel.scrollTop = debugPanel.scrollHeight;
+        }
+        
+        // Check server health
+        async function checkServerHealth() {
+            try {
+                logDebug('Checking server health...');
+                const response = await fetch(`${API_BASE_URL}/api/health`);
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    logDebug(`Server health check: ${data.status}`, 'success');
+                    return true;
+                } else {
+                    logDebug(`Server health check failed: ${response.status} ${response.statusText}`, 'error');
+                    return false;
+                }
+            } catch (error) {
+                logDebug(`Server health check error: ${error.message}`, 'error');
+                return false;
+            }
+        }
+        
+        // Load available voices
+        async function loadVoices() {
+            try {
+                logDebug('Loading available voices...');
+                
+                // In a real implementation, this would fetch from the server
+                // For now, we'll just check if we can access a sample voice
+                const testVoicePath = '/voices/input/speaker_7_temp_1.3_topk_80_accent_variation_120.wav';
+                
+                try {
+                    const response = await fetch(`${API_BASE_URL}${testVoicePath}`, { method: 'HEAD' });
+                    
+                    // Clear select options
+                    voiceSelect.innerHTML = '';
+                    
+                    if (response.ok) {
+                        // Add the sample voice
+                        const option = document.createElement('option');
+                        option.value = testVoicePath;
+                        option.textContent = 'Sample Voice';
+                        voiceSelect.appendChild(option);
+                        
+                        logDebug('Loaded 1 voice', 'success');
+                    } else {
+                        // Add empty option
+                        const option = document.createElement('option');
+                        option.value = '';
+                        option.textContent = 'No voices available';
+                        voiceSelect.appendChild(option);
+                        
+                        logDebug(`Failed to load voices: ${response.status} ${response.statusText}`, 'warning');
+                    }
+                } catch (error) {
+                    // Add empty option
+                    voiceSelect.innerHTML = '';
+                    const option = document.createElement('option');
+                    option.value = '';
+                    option.textContent = 'No voices available';
+                    voiceSelect.appendChild(option);
+                    
+                    logDebug(`Error loading voices: ${error.message}`, 'warning');
+                }
+            } catch (error) {
+                logDebug(`Error loading voices: ${error.message}`, 'error');
+            }
+        }
+        
+        // Generate speech
+        async function generateSpeech() {
+            try {
+                // Check if server is healthy
+                const isHealthy = await checkServerHealth();
+                if (!isHealthy) {
+                    logDebug('Cannot generate speech: Server is not healthy', 'error');
+                    return;
+                }
+                
+                // Get form values
+                const voice = voiceSelect.value;
+                const text = textInput.value.trim();
+                const device = deviceSelect.value;
+                
+                // Validate input
+                if (!text) {
+                    logDebug('Please enter text to convert to speech', 'error');
+                    return;
+                }
+                
+                // Disable button and show loading state
+                generateButton.disabled = true;
+                generateButton.textContent = 'Generating...';
+                logDebug(`Generating speech for text: "${text.substring(0, 50)}${text.length > 50 ? '...' : ''}"`, 'info');
+                
+                // Make API request
+                const response = await fetch(`${API_BASE_URL}/api/tts`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        text,
+                        voice,
+                        device
+                    })
+                });
+                
+                // Parse response
+                const data = await response.json();
+                
+                if (response.ok && data.success) {
+                    logDebug(`Speech generated successfully: ${data.output_path}`, 'success');
+                    
+                    // Update audio player
+                    audioPlayer.src = `${API_BASE_URL}${data.url}`;
+                    audioPath.textContent = data.url;
+                    audioContainer.classList.remove('hidden');
+                    
+                    // Play audio
+                    audioPlayer.play();
+                } else {
+                    logDebug(`Failed to generate speech: ${data.error || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                logDebug(`Error generating speech: ${error.message}`, 'error');
+            } finally {
+                // Reset button state
+                generateButton.disabled = false;
+                generateButton.textContent = 'Generate Speech';
+            }
+        }
+        
+        // Run server diagnostic
+        async function runDiagnostic() {
+            try {
+                logDebug('Running server diagnostic...', 'info');
+                
+                // Check server health
+                const isHealthy = await checkServerHealth();
+                logDebug(`Server health: ${isHealthy ? 'OK' : 'Not responding'}`, isHealthy ? 'success' : 'error');
+                
+                // Check if we can access the voices directory
+                try {
+                    const voiceResponse = await fetch(`${API_BASE_URL}/voices/input/speaker_7_temp_1.3_topk_80_accent_variation_120.wav`, { method: 'HEAD' });
+                    logDebug(`Voice file access: ${voiceResponse.ok ? 'OK' : 'Failed'}`, voiceResponse.ok ? 'success' : 'error');
+                    
+                    if (!voiceResponse.ok) {
+                        logDebug(`Voice file not found. Make sure the file exists at /voices/input/speaker_7_temp_1.3_topk_80_accent_variation_120.wav`, 'warning');
+                        logDebug(`Try copying a voice file to this location: cp /home/tdeshane/movie_maker/voices/explore/speaker_7_temp_1.3_topk_80_accent_variation_120.wav /home/tdeshane/tts_poc/voices/input/`, 'info');
+                    }
+                } catch (error) {
+                    logDebug(`Voice file access error: ${error.message}`, 'error');
+                }
+                
+                // Check if output directory is writable (indirectly)
+                logDebug(`Output directory should be at: /home/tdeshane/tts_poc/voices/output/`, 'info');
+                
+                logDebug('Diagnostic complete', 'info');
+            } catch (error) {
+                logDebug(`Diagnostic error: ${error.message}`, 'error');
+            }
+        }
+        
+        // Event listeners
+        generateButton.addEventListener('click', generateSpeech);
+        diagnosticButton.addEventListener('click', runDiagnostic);
+        
+        // Initialize
+        async function initialize() {
+            logDebug('Initializing TTS Debug Page...', 'info');
+            await checkServerHealth();
+            await loadVoices();
+            logDebug('Initialization complete', 'success');
+        }
+        
+        // Run initialization
+        initialize();
+    </script>
+</body>
+</html> 

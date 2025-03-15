@@ -1,0 +1,1522 @@
+[
+  {
+    "filename": "speaker_0_temp_0.5_topk_50_technical_7",
+    "file_path": "voices/input/speaker_0_temp_0.5_topk_50_technical_7.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "0.5",
+    "topk": "50",
+    "style": "technical 7"
+  },
+  {
+    "filename": "speaker_0_temp_0.5_topk_80_short_10",
+    "file_path": "voices/input/speaker_0_temp_0.5_topk_80_short_10.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "0.5",
+    "topk": "80",
+    "style": "short 10"
+  },
+  {
+    "filename": "speaker_0_temp_0.75_topk_20_game_instructions_18",
+    "file_path": "voices/input/speaker_0_temp_0.75_topk_20_game_instructions_18.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "0.75",
+    "topk": "20",
+    "style": "game instructions 18"
+  },
+  {
+    "filename": "speaker_0_temp_0.75_topk_50_game_instructions_23",
+    "file_path": "voices/input/speaker_0_temp_0.75_topk_50_game_instructions_23.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "0.75",
+    "topk": "50",
+    "style": "game instructions 23"
+  },
+  {
+    "filename": "speaker_0_temp_0.9_topk_20_accent_variation_34",
+    "file_path": "voices/input/speaker_0_temp_0.9_topk_20_accent_variation_34.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "0.9",
+    "topk": "20",
+    "style": "accent variation 34"
+  },
+  {
+    "filename": "speaker_0_temp_0.9_topk_50_conversation_11",
+    "file_path": "voices/input/speaker_0_temp_0.9_topk_50_conversation_11.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "conversation 11"
+  },
+  {
+    "filename": "speaker_0_temp_0.9_topk_50_medium_8",
+    "file_path": "voices/input/speaker_0_temp_0.9_topk_50_medium_8.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "medium 8"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_20_emotional_51",
+    "file_path": "voices/input/speaker_0_temp_1.1_topk_20_emotional_51.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "emotional 51"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_50_medium_28",
+    "file_path": "voices/input/speaker_0_temp_1.1_topk_50_medium_28.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "medium 28"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_50_short_55",
+    "file_path": "voices/input/speaker_0_temp_1.1_topk_50_short_55.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "short 55"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_80_accent_variation_68",
+    "file_path": "voices/input/speaker_0_temp_1.1_topk_80_accent_variation_68.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "accent variation 68"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_80_conversation_66",
+    "file_path": "voices/input/speaker_0_temp_1.1_topk_80_conversation_66.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "conversation 66"
+  },
+  {
+    "filename": "speaker_0_temp_1.1_topk_80_game_instructions_39",
+    "file_path": "voices/input/speaker_0_temp_1.1_topk_80_game_instructions_39.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "game instructions 39"
+  },
+  {
+    "filename": "speaker_0_temp_1.3_topk_80_medium_55",
+    "file_path": "voices/input/speaker_0_temp_1.3_topk_80_medium_55.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "0",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "medium 55"
+  },
+  {
+    "filename": "speaker_1_temp_0.5_topk_80_short_98",
+    "file_path": "voices/input/speaker_1_temp_0.5_topk_80_short_98.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "1",
+    "temperature": "0.5",
+    "topk": "80",
+    "style": "short 98"
+  },
+  {
+    "filename": "speaker_1_temp_0.9_topk_20_accent_variation_122",
+    "file_path": "voices/input/speaker_1_temp_0.9_topk_20_accent_variation_122.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "1",
+    "temperature": "0.9",
+    "topk": "20",
+    "style": "accent variation 122"
+  },
+  {
+    "filename": "speaker_1_temp_1.1_topk_50_game_instructions_92",
+    "file_path": "voices/input/speaker_1_temp_1.1_topk_50_game_instructions_92.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "1",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "game instructions 92"
+  },
+  {
+    "filename": "speaker_1_temp_1.1_topk_80_medium_151",
+    "file_path": "voices/input/speaker_1_temp_1.1_topk_80_medium_151.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "1",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "medium 151"
+  },
+  {
+    "filename": "speaker_1_temp_1.3_topk_50_conversation_167",
+    "file_path": "voices/input/speaker_1_temp_1.3_topk_50_conversation_167.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "1",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "conversation 167"
+  },
+  {
+    "filename": "speaker_1_temp_1.3_topk_80_game_instructions_119",
+    "file_path": "voices/input/speaker_1_temp_1.3_topk_80_game_instructions_119.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "1",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "game instructions 119"
+  },
+  {
+    "filename": "speaker_1_temp_1.3_topk_80_short_170",
+    "file_path": "voices/input/speaker_1_temp_1.3_topk_80_short_170.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "1",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "short 170"
+  },
+  {
+    "filename": "speaker_2_temp_0.9_topk_50_conversation_with_context_122",
+    "file_path": "voices/input/speaker_2_temp_0.9_topk_50_conversation_with_context_122.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "conversation with context 122"
+  },
+  {
+    "filename": "speaker_2_temp_0.9_topk_50_conversation_with_context_709",
+    "file_path": "voices/input/speaker_2_temp_0.9_topk_50_conversation_with_context_709.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "conversation with context 709"
+  },
+  {
+    "filename": "speaker_2_temp_0.9_topk_80_accent_variation_224",
+    "file_path": "voices/input/speaker_2_temp_0.9_topk_80_accent_variation_224.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "0.9",
+    "topk": "80",
+    "style": "accent variation 224"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_accent_variation_230",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_20_accent_variation_230.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "accent variation 230"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_conversation_4",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_20_conversation_4.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "conversation 4"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_emotional_227",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_20_emotional_227.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "emotional 227"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_emotional_3",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_20_emotional_3.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "emotional 3"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_game_instructions_5",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_20_game_instructions_5.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "game instructions 5"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_medium_2",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_20_medium_2.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "medium 2"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_20_short_1",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_20_short_1.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "short 1"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_conversation_11",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_50_conversation_11.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "conversation 11"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_emotional_10",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_50_emotional_10.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "emotional 10"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_game_instructions_12",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_50_game_instructions_12.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "game instructions 12"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_medium_8",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_50_medium_8.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "medium 8"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_50_short_7",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_50_short_7.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "short 7"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_80_conversation_18",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_80_conversation_18.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "conversation 18"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_80_game_instructions_19",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_80_game_instructions_19.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "game instructions 19"
+  },
+  {
+    "filename": "speaker_2_temp_1.1_topk_80_technical_16",
+    "file_path": "voices/input/speaker_2_temp_1.1_topk_80_technical_16.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "technical 16"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_accent_variation_26",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_20_accent_variation_26.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "accent variation 26"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_conversation_24",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_20_conversation_24.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "conversation 24"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_medium_22",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_20_medium_22.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "medium 22"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_medium_246",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_20_medium_246.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "medium 246"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_20_short_21",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_20_short_21.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "short 21"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_accent_variation_33",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_50_accent_variation_33.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "accent variation 33"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_conversation_255",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_50_conversation_255.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "conversation 255"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_conversation_31",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_50_conversation_31.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "conversation 31"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_emotional_30",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_50_emotional_30.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "emotional 30"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_game_instructions_32",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_50_game_instructions_32.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "game instructions 32"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_50_technical_29",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_50_technical_29.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "technical 29"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_80_accent_variation_40",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_80_accent_variation_40.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "accent variation 40"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_80_conversation_38",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_80_conversation_38.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "conversation 38"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_80_emotional_37",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_80_emotional_37.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "emotional 37"
+  },
+  {
+    "filename": "speaker_2_temp_1.3_topk_80_game_instructions_39",
+    "file_path": "voices/input/speaker_2_temp_1.3_topk_80_game_instructions_39.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "2",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "game instructions 39"
+  },
+  {
+    "filename": "speaker_3_temp_0.5_topk_80_technical_276",
+    "file_path": "voices/input/speaker_3_temp_0.5_topk_80_technical_276.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "3",
+    "temperature": "0.5",
+    "topk": "80",
+    "style": "technical 276"
+  },
+  {
+    "filename": "speaker_3_temp_0.9_topk_20_accent_variation_298",
+    "file_path": "voices/input/speaker_3_temp_0.9_topk_20_accent_variation_298.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "3",
+    "temperature": "0.9",
+    "topk": "20",
+    "style": "accent variation 298"
+  },
+  {
+    "filename": "speaker_3_temp_0.9_topk_50_medium_300",
+    "file_path": "voices/input/speaker_3_temp_0.9_topk_50_medium_300.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "3",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "medium 300"
+  },
+  {
+    "filename": "speaker_3_temp_0.9_topk_50_short_299",
+    "file_path": "voices/input/speaker_3_temp_0.9_topk_50_short_299.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "3",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "short 299"
+  },
+  {
+    "filename": "speaker_3_temp_1.1_topk_50_emotional_150",
+    "file_path": "voices/input/speaker_3_temp_1.1_topk_50_emotional_150.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "3",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "emotional 150"
+  },
+  {
+    "filename": "speaker_3_temp_1.1_topk_80_technical_156",
+    "file_path": "voices/input/speaker_3_temp_1.1_topk_80_technical_156.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "3",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "technical 156"
+  },
+  {
+    "filename": "speaker_3_temp_1.3_topk_20_accent_variation_338",
+    "file_path": "voices/input/speaker_3_temp_1.3_topk_20_accent_variation_338.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "3",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "accent variation 338"
+  },
+  {
+    "filename": "speaker_3_temp_1.3_topk_20_emotional_163",
+    "file_path": "voices/input/speaker_3_temp_1.3_topk_20_emotional_163.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "3",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "emotional 163"
+  },
+  {
+    "filename": "speaker_4_temp_0.75_topk_50_medium_372",
+    "file_path": "voices/input/speaker_4_temp_0.75_topk_50_medium_372.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "0.75",
+    "topk": "50",
+    "style": "medium 372"
+  },
+  {
+    "filename": "speaker_4_temp_0.75_topk_50_short_371",
+    "file_path": "voices/input/speaker_4_temp_0.75_topk_50_short_371.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "0.75",
+    "topk": "50",
+    "style": "short 371"
+  },
+  {
+    "filename": "speaker_4_temp_0.75_topk_80_conversation_379",
+    "file_path": "voices/input/speaker_4_temp_0.75_topk_80_conversation_379.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "0.75",
+    "topk": "80",
+    "style": "conversation 379"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_20_game_instructions_385",
+    "file_path": "voices/input/speaker_4_temp_0.9_topk_20_game_instructions_385.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "0.9",
+    "topk": "20",
+    "style": "game instructions 385"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_50_emotional_190",
+    "file_path": "voices/input/speaker_4_temp_0.9_topk_50_emotional_190.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "emotional 190"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_50_game_instructions_192",
+    "file_path": "voices/input/speaker_4_temp_0.9_topk_50_game_instructions_192.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "game instructions 192"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_80_accent_variation_200",
+    "file_path": "voices/input/speaker_4_temp_0.9_topk_80_accent_variation_200.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "0.9",
+    "topk": "80",
+    "style": "accent variation 200"
+  },
+  {
+    "filename": "speaker_4_temp_0.9_topk_80_short_394",
+    "file_path": "voices/input/speaker_4_temp_0.9_topk_80_short_394.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "0.9",
+    "topk": "80",
+    "style": "short 394"
+  },
+  {
+    "filename": "speaker_4_temp_1.1_topk_20_accent_variation_406",
+    "file_path": "voices/input/speaker_4_temp_1.1_topk_20_accent_variation_406.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "accent variation 406"
+  },
+  {
+    "filename": "speaker_4_temp_1.1_topk_20_emotional_403",
+    "file_path": "voices/input/speaker_4_temp_1.1_topk_20_emotional_403.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "emotional 403"
+  },
+  {
+    "filename": "speaker_4_temp_1.1_topk_20_short_201",
+    "file_path": "voices/input/speaker_4_temp_1.1_topk_20_short_201.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "short 201"
+  },
+  {
+    "filename": "speaker_4_temp_1.1_topk_50_short_207",
+    "file_path": "voices/input/speaker_4_temp_1.1_topk_50_short_207.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "short 207"
+  },
+  {
+    "filename": "speaker_4_temp_1.3_topk_20_conversation_424",
+    "file_path": "voices/input/speaker_4_temp_1.3_topk_20_conversation_424.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "conversation 424"
+  },
+  {
+    "filename": "speaker_4_temp_1.3_topk_20_medium_422",
+    "file_path": "voices/input/speaker_4_temp_1.3_topk_20_medium_422.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "medium 422"
+  },
+  {
+    "filename": "speaker_4_temp_1.3_topk_80_conversation_238",
+    "file_path": "voices/input/speaker_4_temp_1.3_topk_80_conversation_238.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "conversation 238"
+  },
+  {
+    "filename": "speaker_4_temp_1.3_topk_80_technical_236",
+    "file_path": "voices/input/speaker_4_temp_1.3_topk_80_technical_236.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "4",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "technical 236"
+  },
+  {
+    "filename": "speaker_5_temp_0.5_topk_50_conversation_448",
+    "file_path": "voices/input/speaker_5_temp_0.5_topk_50_conversation_448.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "0.5",
+    "topk": "50",
+    "style": "conversation 448"
+  },
+  {
+    "filename": "speaker_5_temp_0.75_topk_20_game_instructions_458",
+    "file_path": "voices/input/speaker_5_temp_0.75_topk_20_game_instructions_458.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "0.75",
+    "topk": "20",
+    "style": "game instructions 458"
+  },
+  {
+    "filename": "speaker_5_temp_0.75_topk_20_medium_456",
+    "file_path": "voices/input/speaker_5_temp_0.75_topk_20_medium_456.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "0.75",
+    "topk": "20",
+    "style": "medium 456"
+  },
+  {
+    "filename": "speaker_5_temp_0.9_topk_20_conversation_472",
+    "file_path": "voices/input/speaker_5_temp_0.9_topk_20_conversation_472.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "0.9",
+    "topk": "20",
+    "style": "conversation 472"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_20_accent_variation_46",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_20_accent_variation_46.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "accent variation 46"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_20_conversation_44",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_20_conversation_44.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "conversation 44"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_20_game_instructions_45",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_20_game_instructions_45.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "game instructions 45"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_20_medium_42",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_20_medium_42.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "medium 42"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_50_emotional_50",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_50_emotional_50.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "emotional 50"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_50_game_instructions_52",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_50_game_instructions_52.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "game instructions 52"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_50_technical_49",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_50_technical_49.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "technical 49"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_accent_variation_60",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_80_accent_variation_60.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "accent variation 60"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_conversation_506",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_80_conversation_506.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "conversation 506"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_emotional_57",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_80_emotional_57.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "emotional 57"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_game_instructions_59",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_80_game_instructions_59.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "game instructions 59"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_medium_55",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_80_medium_55.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "medium 55"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_short_54",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_80_short_54.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "short 54"
+  },
+  {
+    "filename": "speaker_5_temp_1.1_topk_80_technical_56",
+    "file_path": "voices/input/speaker_5_temp_1.1_topk_80_technical_56.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "technical 56"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_20_medium_510",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_20_medium_510.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "medium 510"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_20_medium_62",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_20_medium_62.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "medium 62"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_20_short_61",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_20_short_61.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "short 61"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_conversation_71",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_50_conversation_71.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "conversation 71"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_emotional_70",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_50_emotional_70.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "emotional 70"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_medium_516",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_50_medium_516.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "medium 516"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_short_67",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_50_short_67.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "short 67"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_50_technical_69",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_50_technical_69.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "technical 69"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_accent_variation_80",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_80_accent_variation_80.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "accent variation 80"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_conversation_78",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_80_conversation_78.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "conversation 78"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_emotional_77",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_80_emotional_77.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "emotional 77"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_medium_75",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_80_medium_75.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "medium 75"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_technical_524",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_80_technical_524.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "technical 524"
+  },
+  {
+    "filename": "speaker_5_temp_1.3_topk_80_technical_76",
+    "file_path": "voices/input/speaker_5_temp_1.3_topk_80_technical_76.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "5",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "technical 76"
+  },
+  {
+    "filename": "speaker_6_temp_0.9_topk_50_accent_variation_253",
+    "file_path": "voices/input/speaker_6_temp_0.9_topk_50_accent_variation_253.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "6",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "accent variation 253"
+  },
+  {
+    "filename": "speaker_6_temp_1.1_topk_20_game_instructions_581",
+    "file_path": "voices/input/speaker_6_temp_1.1_topk_20_game_instructions_581.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "6",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "game instructions 581"
+  },
+  {
+    "filename": "speaker_6_temp_1.1_topk_50_accent_variation_273",
+    "file_path": "voices/input/speaker_6_temp_1.1_topk_50_accent_variation_273.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "6",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "accent variation 273"
+  },
+  {
+    "filename": "speaker_6_temp_1.1_topk_50_game_instructions_588",
+    "file_path": "voices/input/speaker_6_temp_1.1_topk_50_game_instructions_588.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "6",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "game instructions 588"
+  },
+  {
+    "filename": "speaker_6_temp_1.1_topk_80_conversation_278",
+    "file_path": "voices/input/speaker_6_temp_1.1_topk_80_conversation_278.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "6",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "conversation 278"
+  },
+  {
+    "filename": "speaker_6_temp_1.3_topk_80_emotional_613",
+    "file_path": "voices/input/speaker_6_temp_1.3_topk_80_emotional_613.wav",
+    "gender": "female",
+    "gender_confidence": 95,
+    "speaker_id": "6",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "emotional 613"
+  },
+  {
+    "filename": "speaker_7_temp_0.5_topk_20_short_617",
+    "file_path": "voices/input/speaker_7_temp_0.5_topk_20_short_617.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "0.5",
+    "topk": "20",
+    "style": "short 617"
+  },
+  {
+    "filename": "speaker_7_temp_0.9_topk_20_short_645",
+    "file_path": "voices/input/speaker_7_temp_0.9_topk_20_short_645.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "0.9",
+    "topk": "20",
+    "style": "short 645"
+  },
+  {
+    "filename": "speaker_7_temp_0.9_topk_50_conversation_with_context_125",
+    "file_path": "voices/input/speaker_7_temp_0.9_topk_50_conversation_with_context_125.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "conversation with context 125"
+  },
+  {
+    "filename": "speaker_7_temp_0.9_topk_50_conversation_with_context_126",
+    "file_path": "voices/input/speaker_7_temp_0.9_topk_50_conversation_with_context_126.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "0.9",
+    "topk": "50",
+    "style": "conversation with context 126"
+  },
+  {
+    "filename": "speaker_7_temp_0.9_topk_80_accent_variation_664",
+    "file_path": "voices/input/speaker_7_temp_0.9_topk_80_accent_variation_664.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "0.9",
+    "topk": "80",
+    "style": "accent variation 664"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_accent_variation_86",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_20_accent_variation_86.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "accent variation 86"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_conversation_84",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_20_conversation_84.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "conversation 84"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_emotional_83",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_20_emotional_83.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "emotional 83"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_game_instructions_85",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_20_game_instructions_85.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "game instructions 85"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_20_medium_82",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_20_medium_82.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "20",
+    "style": "medium 82"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_accent_variation_677",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_50_accent_variation_677.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "accent variation 677"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_accent_variation_93",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_50_accent_variation_93.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "accent variation 93"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_conversation_675",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_50_conversation_675.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "conversation 675"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_conversation_91",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_50_conversation_91.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "conversation 91"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_emotional_90",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_50_emotional_90.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "emotional 90"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_game_instructions_676",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_50_game_instructions_676.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "game instructions 676"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_50_short_87",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_50_short_87.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "50",
+    "style": "short 87"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_accent_variation_100",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_80_accent_variation_100.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "accent variation 100"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_conversation_98",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_80_conversation_98.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "conversation 98"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_emotional_97",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_80_emotional_97.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "emotional 97"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_game_instructions_99",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_80_game_instructions_99.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "game instructions 99"
+  },
+  {
+    "filename": "speaker_7_temp_1.1_topk_80_technical_96",
+    "file_path": "voices/input/speaker_7_temp_1.1_topk_80_technical_96.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.1",
+    "topk": "80",
+    "style": "technical 96"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_20_accent_variation_106",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_20_accent_variation_106.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "accent variation 106"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_20_conversation_104",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_20_conversation_104.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "conversation 104"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_20_emotional_103",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_20_emotional_103.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "emotional 103"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_20_game_instructions_105",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_20_game_instructions_105.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "20",
+    "style": "game instructions 105"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_accent_variation_113",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_50_accent_variation_113.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "accent variation 113"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_conversation_111",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_50_conversation_111.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "conversation 111"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_medium_108",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_50_medium_108.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "medium 108"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_short_107",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_50_short_107.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "short 107"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_50_technical_109",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_50_technical_109.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "50",
+    "style": "technical 109"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_accent_variation_120",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_80_accent_variation_120.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "accent variation 120"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_conversation_118",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_80_conversation_118.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "conversation 118"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_emotional_117",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_80_emotional_117.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "emotional 117"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_game_instructions_119",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_80_game_instructions_119.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "game instructions 119"
+  },
+  {
+    "filename": "speaker_7_temp_1.3_topk_80_technical_116",
+    "file_path": "voices/input/speaker_7_temp_1.3_topk_80_technical_116.wav",
+    "gender": "male",
+    "gender_confidence": 95,
+    "speaker_id": "7",
+    "temperature": "1.3",
+    "topk": "80",
+    "style": "technical 116"
+  }
+]

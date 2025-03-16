@@ -19,12 +19,16 @@ import threading
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler()]
 )
 logger = logging.getLogger("tts_web_api")
 
 # Add the current directory to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+# Get the script directory (add at module level)
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Import the voice cloner and CSM adapter
 from utils.voice_cloner import VoiceCloner
@@ -328,14 +332,14 @@ HTML_TEMPLATE = """
                 <div>
                     <label for="device">Processing Device:</label>
                     <select id="device">
+                        <option value="cpu" selected>CPU</option>
                         <option value="auto">Auto (CUDA if available, else CPU)</option>
                         <option value="cuda">CUDA (GPU)</option>
-                        <option value="cpu">CPU</option>
                     </select>
                 </div>
                 
                 <p><strong>Generate New Speech:</strong></p>
-                <textarea class="tts-input" id="tts-text" placeholder="Enter text for this character to speak...">Welcome to the world of Aetheria, where magic flows like water and danger lurks around every corner.</textarea>
+                <textarea class="tts-input" id="tts-text" placeholder="Enter text for this character to speak...">Hello</textarea>
                 <div class="tts-controls">
                     <button class="tts-generate" id="generate-btn">Generate Speech</button>
                     <div>
@@ -506,7 +510,7 @@ HTML_TEMPLATE = """
             }
         }
         
-        // Function to generate TTS using the server API
+        // Generate TTS using the server API
         async function generateTTS(voicePath, text, device) {
             logDebug(`Generating TTS for voice: ${voicePath}`);
             logDebug(`Text: ${text}`);
@@ -521,7 +525,7 @@ HTML_TEMPLATE = """
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        voice_path: voicePath,
+                        voice: voicePath,
                         text: text,
                         device: device
                     })
@@ -536,13 +540,44 @@ HTML_TEMPLATE = """
                 const data = await response.json();
                 logDebug(`Got response: ${JSON.stringify(data)}`);
                 
-                if (data.success) {
-                    logDebug(`Audio generated at: ${data.output_file}`);
-                    logDebug(`Generation time: ${data.generation_time_ms}ms`);
-                    return data.output_file;
+                if (data.task_id) {
+                    // Start polling for task status
+                    let attempts = 0;
+                    
+                    while (true) {
+                        try {
+                            const statusResponse = await fetch(`/api/status/${data.task_id}`);
+                            if (!statusResponse.ok) {
+                                logDebug(`Error checking status: ${statusResponse.status}`, 'error');
+                                // Wait and retry on network errors
+                                await new Promise(resolve => setTimeout(resolve, 1000));
+                                continue;
+                            }
+                            
+                            const statusData = await statusResponse.json();
+                            logDebug(`Task status: ${statusData.status}, progress: ${statusData.progress}%`);
+                            
+                            // Update the status message with progress
+                            updateStatus(`Generating speech... ${statusData.progress}%`, 'generating');
+                            
+                            if (statusData.status === 'complete') {
+                                return statusData.output;
+                            } else if (statusData.status === 'error') {
+                                throw new Error(statusData.error || 'Generation failed');
+                            }
+                        } catch (error) {
+                            // Only throw if it's not a network error
+                            if (error.message !== 'Failed to fetch') {
+                                throw error;
+                            }
+                            logDebug(`Network error checking status. Retrying...`, 'error');
+                        }
+                        
+                        // Wait 1 second before next poll
+                        await new Promise(resolve => setTimeout(resolve, 1000));
+                    }
                 } else {
-                    logDebug(`API returned error: ${data.error || 'Unknown error'}`, 'error');
-                    throw new Error(data.error || 'Unknown error occurred');
+                    throw new Error('No task ID received');
                 }
             } catch (error) {
                 logDebug(`Error calling TTS API: ${error.message}`, 'error');
@@ -665,8 +700,15 @@ HTML_TEMPLATE = """
         document.addEventListener('DOMContentLoaded', () => {
             logDebug('Page loaded, initializing...');
             
-            // Load voice data
-            loadVoiceData();
+            // Load voice data and auto-select first voice
+            loadVoiceData().then(() => {
+                // Auto-select the first voice after loading
+                const voiceSelector = document.getElementById('voice-selector');
+                if (voiceSelector.options.length > 1) {
+                    voiceSelector.selectedIndex = 1;  // Select first voice (index 1 since index 0 is the placeholder)
+                    updateCharacterInfo(voiceSelector.value);
+                }
+            });
             
             // Set up voice selector change event
             const voiceSelector = document.getElementById('voice-selector');
@@ -795,6 +837,9 @@ def generate_speech():
     if not text:
         return jsonify({"error": "Text is required"}), 400
     
+    if not voice_path:
+        return jsonify({"error": "Voice path is required"}), 400
+    
     # For very short texts in testing, default to CPU to avoid GPU overhead
     if len(text) < 5 and device == "auto":
         device = "cpu"
@@ -810,7 +855,8 @@ def generate_speech():
                 "progress": 0,
                 "error": None,
                 "output": None,
-                "text_length": len(text)
+                "text_length": len(text),
+                "start_time": time.time()
             }
         
         # Submit the generation task to run in the background
@@ -829,11 +875,19 @@ def generate_speech():
         logger.exception(f"Error submitting generation task: {e}")
         return jsonify({"error": str(e)}), 500
 
+# Add an alias for the generate_speech endpoint for backward compatibility
+@app.route('/api/tts', methods=['POST'])
+def generate_speech_alias():
+    return generate_speech()
+
 def perform_generation(task_id, text, voice_path, device, model):
     """Perform speech generation in a background thread."""
     try:
+        logger.info(f"Starting generation task {task_id} for text: '{text}'")
+        
         with task_lock:
             if task_id not in tasks:
+                logger.warning(f"Task {task_id} not found in task list")
                 return
             
             tasks[task_id]["status"] = "running"
@@ -842,12 +896,28 @@ def perform_generation(task_id, text, voice_path, device, model):
         # Short text optimization
         is_short_text = len(text) < 10
         
-        # Validate the voice path
-        if voice_path:
-            if voice_path.startswith('input/'):
-                voice_path = os.path.join(script_dir, 'voices', voice_path)
-            elif not os.path.isabs(voice_path):
-                voice_path = os.path.join(script_dir, 'voices', 'input', voice_path)
+        # Validate and normalize the voice path
+        if not voice_path:
+            raise ValueError("Voice path is required")
+        
+        # Get the script directory
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        
+        # Handle different voice path formats
+        if voice_path.startswith('voices/'):
+            # Remove 'voices/' prefix if present
+            voice_path = voice_path[7:]
+        
+        if voice_path.startswith('input/'):
+            voice_path = os.path.join(script_dir, 'voices', voice_path)
+        else:
+            voice_path = os.path.join(script_dir, 'voices', 'input', voice_path)
+        
+        # Verify the voice file exists
+        if not os.path.exists(voice_path):
+            raise ValueError(f"Voice file not found: {voice_path}")
+        
+        logger.info(f"Using voice file: {voice_path}")
         
         with task_lock:
             tasks[task_id]["progress"] = 20
@@ -859,45 +929,82 @@ def perform_generation(task_id, text, voice_path, device, model):
         # Choose the appropriate model
         if model == "csm":
             logger.info(f"Generating speech with CSM model: '{text}'")
+            
+            with task_lock:
+                tasks[task_id]["progress"] = 30
+                
             output_path = csm_adapter.generate_speech(text, voice_path, device)
+            
+            with task_lock:
+                tasks[task_id]["progress"] = 90
         else:
             logger.info(f"Generating speech with simple model: '{text}'")
-            output_path = voice_cloner.generate_speech(text, voice_path, device)
-        
-        with task_lock:
-            tasks[task_id]["progress"] = 90
             
+            with task_lock:
+                tasks[task_id]["progress"] = 30
+                
+            # Generate output path
+            output_filename = voice_cloner._generate_output_filename()
+            output_path = os.path.join(voice_cloner.output_dir, output_filename)
+            success = voice_cloner.generate_direct(text, voice_path, output_path, device=device)
+            
+            with task_lock:
+                tasks[task_id]["progress"] = 90
+                
+            if not success:
+                output_path = None
+        
         if output_path and os.path.exists(output_path):
             # Get relative path for frontend
             rel_path = os.path.relpath(output_path, os.path.join(script_dir, 'voices'))
             rel_path = rel_path.replace('\\', '/')  # Handle Windows paths
             
+            logger.info(f"Generation complete for task {task_id}. Audio saved to: {output_path}, relative path: {rel_path}")
+            
             with task_lock:
                 tasks[task_id]["status"] = "complete"
                 tasks[task_id]["progress"] = 100
-                tasks[task_id]["output"] = rel_path
-                
-                # Add generation time information for diagnostics
+                tasks[task_id]["output"] = f"audio/{os.path.basename(output_path)}"
                 tasks[task_id]["generation_time"] = time.time() - tasks[task_id].get("start_time", time.time())
+                
+            logger.info(f"Task {task_id} marked as complete with output: {tasks[task_id]['output']}")
         else:
+            logger.error(f"Failed to generate or save audio file for task {task_id}")
+            
             with task_lock:
                 tasks[task_id]["status"] = "error"
                 tasks[task_id]["progress"] = 100
-                tasks[task_id]["error"] = "Failed to generate speech"
+                tasks[task_id]["error"] = "Failed to generate speech output"
     
     except Exception as e:
-        logger.exception(f"Error during speech generation: {e}")
+        logger.exception(f"Error during speech generation for task {task_id}: {e}")
+        
         with task_lock:
             if task_id in tasks:
                 tasks[task_id]["status"] = "error"
                 tasks[task_id]["progress"] = 100
                 tasks[task_id]["error"] = str(e)
 
-@app.route('/audio/<filename>')
+@app.route('/audio/<path:filename>')
 def serve_audio(filename):
     """Serve generated audio files."""
-    output_dir = voice_cloner.output_dir
+    output_dir = os.path.join(script_dir, 'voices', 'output')
+    logger.info(f"Serving audio file: {filename} from {output_dir}")
     return send_from_directory(output_dir, filename)
+
+@app.route('/voices/output/<path:filename>')
+def serve_output_audio_alt(filename):
+    """Alternative route for serving output audio files."""
+    output_dir = os.path.join(script_dir, 'voices', 'output')
+    logger.info(f"Serving output audio file (alt): {filename} from {output_dir}")
+    return send_from_directory(output_dir, filename)
+
+@app.route('/voices/input/<path:filename>')
+def serve_input_audio(filename):
+    """Serve input voice sample files."""
+    input_dir = os.path.join(script_dir, 'voices', 'input')
+    logger.info(f"Serving input audio file: {filename} from {input_dir}")
+    return send_from_directory(input_dir, filename)
 
 @app.route('/api/diagnostic', methods=['GET'])
 def diagnostic():
@@ -1041,4 +1148,4 @@ if __name__ == '__main__':
     logger.info(f"Output voice directory: {voice_cloner.output_dir}")
     
     # Start the server
-    app.run(host='0.0.0.0', port=9000, debug=True) 
+    app.run(host='0.0.0.0', port=9001, debug=False) 

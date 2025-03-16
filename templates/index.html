@@ -53,20 +53,19 @@
             resize: vertical;
         }
         button {
-            background-color: #3498db;
+            background-color: #4a90e2;
             color: white;
             border: none;
             padding: 10px 15px;
-            border-radius: 4px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
             transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #2980b9;
+            background-color: #357ebd;
         }
         button:disabled {
-            background-color: #95a5a6;
+            background-color: #cccccc;
             cursor: not-allowed;
         }
         .result {
@@ -127,10 +126,16 @@
             font-weight: 600;
         }
         .error-message {
-            color: #e74c3c;
+            color: #d9534f;
+            font-weight: bold;
         }
         .success-message {
-            color: #27ae60;
+            color: #5cb85c;
+            font-weight: bold;
+        }
+        .warning-message {
+            color: #f0ad4e;
+            font-weight: bold;
         }
         .audio-player {
             width: 100%;
@@ -187,6 +192,9 @@
             overflow-x: auto;
             background-color: #f8f8f8;
             border-radius: 4px;
+        }
+        .button-container {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -267,6 +275,9 @@
         let voices = [];
         let currentTaskId = null;
         let statusCheckInterval = null;
+        let statusCheckCount = 0;
+        let maxStatusChecks = 120; // 120 seconds = 2 minutes
+        let enableTimeout = false; // Set to false to disable timeout checks
         
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
@@ -388,12 +399,15 @@
         
         // Generate speech from text
         function generateSpeech() {
+            // Reset the status check counter when starting a new generation
+            statusCheckCount = 0;
+            
             const text = document.getElementById('textInput').value.trim();
             const device = document.getElementById('deviceSelect').value;
             const model = document.getElementById('modelSelect').value;
             
             if (!text) {
-                setStatusMessage('Please enter text to generate speech.', 'error');
+                setStatusMessage('Please enter some text to generate.', 'error');
                 return;
             }
             
@@ -438,19 +452,37 @@
         
         // Check task status
         function checkTaskStatus() {
-            if (!currentTaskId) return;
+            statusCheckCount++;
+            
+            // Only check for timeout if enabled
+            if (enableTimeout && statusCheckCount > maxStatusChecks) {
+                clearInterval(statusCheckInterval);
+                setStatusMessage("Generation is taking longer than expected. The server might still be processing in the background.", "warning");
+                disableGenerateButton(false);
+                showProgress(false);
+                statusCheckCount = 0;
+                return;
+            }
             
             fetch(`/api/status/${currentTaskId}`)
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Network response error: ${response.status}`);
+                    }
+                    return response.json();
+                })
                 .then(data => {
+                    console.log("Task status:", data); // Debug output
                     updateProgress(data.progress);
                     
                     if (data.status === 'complete') {
                         clearInterval(statusCheckInterval);
                         setStatusMessage('Speech generation complete!', 'success');
                         disableGenerateButton(false);
+                        statusCheckCount = 0;  // Reset the counter
                         
                         if (data.output) {
+                            console.log("Playing audio:", data.output); // Debug output
                             playGeneratedAudio(data.output);
                         }
                     } else if (data.status === 'error') {
@@ -458,14 +490,15 @@
                         setStatusMessage(`Error: ${data.error}`, 'error');
                         disableGenerateButton(false);
                         showProgress(false);
+                        statusCheckCount = 0;  // Reset the counter
+                    } else {
+                        console.log(`Task in progress: ${data.progress}%`); // Debug output
                     }
                 })
                 .catch(error => {
                     console.error('Error checking task status:', error);
-                    clearInterval(statusCheckInterval);
-                    setStatusMessage('Error checking task status.', 'error');
-                    disableGenerateButton(false);
-                    showProgress(false);
+                    // Don't clear the interval on network errors, let it retry
+                    setStatusMessage(`Error checking task status: ${error.message}. Retrying...`, 'warning');
                 });
         }
         
@@ -494,6 +527,8 @@
                 statusMessage.classList.add('error-message');
             } else if (type === 'success') {
                 statusMessage.classList.add('success-message');
+            } else if (type === 'warning') {
+                statusMessage.classList.add('warning-message');
             }
         }
         
@@ -507,10 +542,29 @@
         // Play generated audio
         function playGeneratedAudio(audioPath) {
             const audioPlayer = document.getElementById('audioPlayer');
-            audioPlayer.src = `/${audioPath}`;
+            
+            // Add a timestamp to force reload of the audio file (avoid browser caching)
+            const timestampedPath = `/${audioPath}?t=${Date.now()}`;
+            console.log("Setting audio source to:", timestampedPath);
+            
+            audioPlayer.src = timestampedPath;
             audioPlayer.style.display = 'block';
+            
+            // Set up error handling
+            audioPlayer.onerror = function(e) {
+                console.error('Error loading audio file:', e);
+                setStatusMessage(`Error playing audio: ${audioPlayer.error?.message || 'Could not load audio file'}`, 'error');
+            };
+            
+            // Set up success handling
+            audioPlayer.onloadeddata = function() {
+                console.log("Audio loaded successfully");
+                setStatusMessage('Audio loaded successfully. Playing...', 'success');
+            };
+            
             audioPlayer.play().catch(error => {
                 console.error('Error playing audio:', error);
+                setStatusMessage(`Error playing audio: ${error.message}`, 'error');
             });
         }
         
